@@ -87,8 +87,9 @@ tags: []
    
 施設内にある列車非常停止ボタンのサンプルが面白かった。  
 後日気づいたがこのときは電源が入っていなかった。  
-https://twitter.com/wk/status/928806521130991619  
-   
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="und" dir="ltr"><a href="https://t.co/TN0Xs1Aw3l">pic.twitter.com/TN0Xs1Aw3l</a></p>&mdash; wk (@wk) <a href="https://twitter.com/wk/status/928806521130991619?ref_src=twsrc%5Etfw">November 10, 2017</a></blockquote>
+
 ### 2017/11/14
 ちょっと寝坊して、乗る予定だった丁度いい時間で到着するバスが目の前で行ってしまった。  
 タクシーに切り替えて、余裕で到着。   
@@ -137,9 +138,9 @@ https://twitter.com/wk/status/928806521130991619
    
 数ヶ月後には今の免許証の期限が来る。  
 それまでに合格して、2 時間の初心者更新講習を回避したい。  
-   
-https://twitter.com/wk/status/930300422933291008  
-   
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">ホイールローダ、運転難しかった　走れなくはないけどふらつく</p>&mdash; wk (@wk) <a href="https://twitter.com/wk/status/930300422933291008?ref_src=twsrc%5Etfw">November 14, 2017</a></blockquote>
+
 ### 2017/12/04
 集合が 8:20 なので、気合いで早起きした。  
 7:30 過ぎに試験場に着いて、向かいのすき家で朝食にした。  
@@ -162,9 +163,9 @@ https://twitter.com/wk/status/930300422933291008
 10 回くらいは受ける覚悟でいたので、思ったよりは早く取得できそう。  
    
 次回は 12/20 を予約。  
-   
-https://twitter.com/wk/status/937486644516499456  
-   
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">大特一発試験 2 回目、今回は完走できたけど減点超過であと少しだった、でも思ったよりは早く合格できそう</p>&mdash; wk (@wk) <a href="https://twitter.com/wk/status/937486644516499456?ref_src=twsrc%5Etfw">December 4, 2017</a></blockquote>
+
 ### 2017/12/12
 12/11 の夕方にふと「もっと早い日程空いてませんか」と技能試験窓口に電話してみたところ、「たまたま明日空いている」とのことで急遽。  
 電話口で空いているのはたまたまであると何度か言われたので、いつでもこう上手いこと予約できる訳ではないんだぞという意思を感じた。  
@@ -232,7 +233,8 @@ A コースしか当たらないのだろうかと思った。
 今回はそつなく完走でき、駐車措置をしたあと、「降車して助手席側に来てください」と言われた。  
 合格したなと思いつつ、気を抜かず安全確認などしながら降車して、助手席側のドアから試験官を待つ。  
 氏名と生年月日と住所を尋ねられ、答えると、「合格です、待合室で待機しているように」という旨伝えられ、緑の紙を受け取った。  
-https://twitter.com/wk/status/943276200562012161  
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">朝っぱらから試験場でホイールローダを乗り回した　緑の紙をもらった</p>&mdash; wk (@wk) <a href="https://twitter.com/wk/status/943276200562012161?ref_src=twsrc%5Etfw">December 20, 2017</a></blockquote>
 
 ![合格予定者表と書かれた紙切れ](./20180409021259.jpg)
    
@@ -243,11 +245,11 @@ https://twitter.com/wk/status/943276200562012161
 手数料を払ったり写真を撮ったりして、交付窓口に受験申請書を提出すると引換券を渡される。  
 20 分程度待つと呼ばれて新しい免許証を受け取る。  
 これで晴れて大型特殊の免許を取得したことになる。  
-   
-https://twitter.com/wk/status/943296872646565888  
-https://twitter.com/wk/status/943297116654395392  
-https://twitter.com/wk/status/943299992638205953  
-   
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">大型特殊免許取れた　乗る予定はない <a href="https://t.co/TsMqw87RFi">pic.twitter.com/TsMqw87RFi</a></p>&mdash; wk (@wk) <a href="https://twitter.com/wk/status/943296872646565888?ref_src=twsrc%5Etfw">December 20, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">新しい免許証の写真、表情微妙だし、服ズレてるし、撮り直したい</p>&mdash; wk (@wk) <a href="https://twitter.com/wk/status/943297116654395392?ref_src=twsrc%5Etfw">December 20, 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="ja" dir="ltr">直接受験、教習所の 5 分の 1 くらいの値段で取れた　推せる</p>&mdash; wk (@wk) <a href="https://twitter.com/wk/status/943299992638205953?ref_src=twsrc%5Etfw">December 20, 2017</a></blockquote>
+
 ### 成績表の開示請求
 成績表には採点の内容が載っているので、開示してもらうことで自らの運転の弱点を知り安全運転に役立てたいと考えた (建前)。  
 合格した足で霞ヶ関にある警視庁の本庁内の情報公開センターへ向かった。  
