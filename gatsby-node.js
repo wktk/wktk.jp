@@ -51,7 +51,8 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    const tags = Array.from(new Set(posts.map(post => post.node.frontmatter.tags).flat(1)))
+    const flatTags = Array.prototype.concat.apply([], posts.map(post => post.node.frontmatter.tags))
+    const tags = Array.from(new Set(flatTags))
 
     tags.forEach(tag => {
       createPage({
