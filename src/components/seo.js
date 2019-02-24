@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, ogimage }) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -50,6 +50,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 name: `twitter:description`,
                 content: metaDescription,
               },
+              {
+                property: `og:image`,
+                content: ogimage ? ogimage : data.avatar.childImageSharp.fixed.src,
+              },
             ]
               .concat(
                 keywords.length > 0
@@ -79,12 +83,20 @@ SEO.propTypes = {
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
+  ogimage: PropTypes.string,
 }
 
 export default SEO
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {
+    avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      childImageSharp {
+        fixed(width: 400, height: 400) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     site {
       siteMetadata {
         title
