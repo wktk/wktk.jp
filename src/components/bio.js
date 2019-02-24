@@ -34,7 +34,8 @@ function Bio() {
               }}
             />
             <p>
-              Author: <a href="/about" style={{ fontWeight: `bold` }}>{author}</a>
+              Author: <strong>{author}</strong><br/>
+              <a href="/about">About / Contact</a>
             </p>
           </a>
         )
