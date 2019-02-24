@@ -11,11 +11,14 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <div
+          <a
             style={{
               display: `flex`,
               marginBottom: rhythm(2.5),
+              color: `black`,
+              boxShadow: `none`,
             }}
+            href={`/about`}
           >
             <Image
               fixed={data.avatar.childImageSharp.fixed}
@@ -31,10 +34,9 @@ function Bio() {
               }}
             />
             <p>
-              <strong style={{ display: `block` }}>Author: {author}</strong>
-              {social.map(s => <a href={s.prefix + s.username}>{s.name}</a>).reduce((p, c) => [p, ', ', c])}
+              Author: <a href="/about" style={{ fontWeight: `bold` }}>{author}</a>
             </p>
-          </div>
+          </a>
         )
       }}
     />
@@ -53,11 +55,6 @@ const bioQuery = graphql`
     site {
       siteMetadata {
         author
-        social {
-          name
-          prefix
-          username
-        }
       }
     }
   }

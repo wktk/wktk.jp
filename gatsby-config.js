@@ -7,17 +7,17 @@ module.exports = {
     social: [
       {
         name: `Twitter`,
-        prefix: `https://twitter.com/`,
+        url: `https://twitter.com/wk`,
         username: `wk`,
       },
       {
         name: `GitHub`,
-        prefix: `https://github.com/`,
+        url: `https://github.com/wktk`,
         username: `wktk`,
       },
       {
         name: `Email`,
-        prefix: `mailto:`,
+        url: `mailto:k.wakitani@gmail.com`,
         username: `k.wakitani@gmail.com`,
       },
     ],
