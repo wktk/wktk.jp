@@ -89,5 +89,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-slug`,
+    `gatsby-plugin-twitter`,
   ],
 }
