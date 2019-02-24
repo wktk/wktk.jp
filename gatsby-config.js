@@ -4,9 +4,23 @@ module.exports = {
     author: `@wk`,
     description: ``,
     siteUrl: `https://wktk.jp/`,
-    social: {
-      twitter: `wk`,
-    },
+    social: [
+      {
+        name: `Twitter`,
+        prefix: `https://twitter.com/`,
+        username: `wk`,
+      },
+      {
+        name: `GitHub`,
+        prefix: `https://github.com/`,
+        username: `wktk`,
+      },
+      {
+        name: `Email`,
+        prefix: `mailto:`,
+        username: `k.wakitani@gmail.com`,
+      },
+    ],
   },
   plugins: [
     {

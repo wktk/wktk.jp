@@ -31,12 +31,8 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
+              <strong style={{ display: `block` }}>Author: {author}</strong>
+              {social.map(s => <a href={s.prefix + s.username}>{s.name}</a>).reduce((p, c) => [p, ', ', c])}
             </p>
           </div>
         )
@@ -58,7 +54,9 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          name
+          prefix
+          username
         }
       }
     }
