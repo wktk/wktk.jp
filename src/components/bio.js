@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -11,14 +11,14 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <a
+          <Link
             style={{
               display: `flex`,
               marginBottom: rhythm(2.5),
               color: `black`,
               boxShadow: `none`,
             }}
-            href={`/about`}
+            to={`/about/`}
           >
             <Image
               fixed={data.avatar.childImageSharp.fixed}
@@ -35,9 +35,9 @@ function Bio() {
             />
             <p>
               Author: <strong>{author}</strong><br/>
-              <a href="/about">About / Contact</a>
+              <Link to="/about/">About / Contact</Link>
             </p>
-          </a>
+          </Link>
         )
       }}
     />
