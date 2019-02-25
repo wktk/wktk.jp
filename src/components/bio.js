@@ -18,7 +18,7 @@ function Bio() {
               color: `black`,
               boxShadow: `none`,
             }}
-            to={`/about`}
+            to={`/about/`}
           >
             <Image
               fixed={data.avatar.childImageSharp.fixed}
@@ -35,7 +35,7 @@ function Bio() {
             />
             <p>
               Author: <strong>{author}</strong><br/>
-              <Link to="/about">About / Contact</Link>
+              <Link to="/about/">About / Contact</Link>
             </p>
           </Link>
         )

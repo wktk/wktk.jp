@@ -88,7 +88,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-slug`,
     `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-plugin-canonical-urls`,

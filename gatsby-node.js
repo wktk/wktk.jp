@@ -41,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
       const next = index === 0 ? null : posts[index - 1].node
 
       createPage({
-        path: post.node.fields.slug,
+        path: post.node.fields.slug.replace(/\/?$/, '/'),
         component: blogPost,
         context: {
           slug: post.node.fields.slug,
@@ -56,7 +56,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     tags.forEach(tag => {
       createPage({
-        path: `/tags/${tag}`,
+        path: `/tags/${tag}/`,
         component: tagTemplate,
         context: {
           tag,
@@ -70,22 +70,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    let value;
+    if (node.frontmatter && node.frontmatter.slug) {
+      value = `/${node.frontmatter.slug}/`
+    } else {
+      value = createFilePath({ node, getNode })
+    }
     createNodeField({
       name: `slug`,
       node,
       value,
     })
-  }
-}
-
-const replacePath = path => (path === `/` ? path : path.replace(/\/$/, ``))
-exports.onCreatePage = ({ page, actions }) => {
-  const { createPage, deletePage } = actions
-  const oldPage = Object.assign({}, page)
-  page.path = replacePath(page.path)
-  if (page.path !== oldPage.path) {
-    deletePage(oldPage)
-    createPage(page)
   }
 }

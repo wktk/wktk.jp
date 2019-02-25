@@ -35,7 +35,7 @@ class TagsIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={ `tags/${key}` }>{key}</Link>
+                <Link style={{ boxShadow: `none` }} to={ `/tags/${key}/` }>{key}</Link>
               </h3>
               <small>{tags[key].length}</small>
             </div>
