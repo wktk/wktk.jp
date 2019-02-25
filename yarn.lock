@@ -4652,6 +4652,13 @@ gatsby-link@^2.0.12:
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
 
+gatsby-plugin-canonical-urls@^2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-2.0.10.tgz#74430ea0526d2b7b87649a2fe4295bdd28081456"
+  integrity sha512-XEhGiku4dg8ezsM+QI0ql8Rda4SLRM0m0ntd9+D6ubDZAXLH9CSpnYL8bfACiBdWmyAokPARY+X5mTkGrULypA==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-plugin-feed@^2.0.13:
   version "2.0.13"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.0.13.tgz#4a457a81d28cbe1ebb6d944272711b0a0671bbd3"
