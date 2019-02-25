@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `wktk.jp`,
     author: `@wk`,
-    description: ``,
+    description: `blog`,
     siteUrl: `https://wktk.jp`,
     social: [
       {
