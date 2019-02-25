@@ -90,5 +90,11 @@ module.exports = {
     },
     `gatsby-plugin-slug`,
     `gatsby-plugin-twitter`,
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+	siteUrl: `https://wktk.jp`,
+      },
+    },
   ],
 }
