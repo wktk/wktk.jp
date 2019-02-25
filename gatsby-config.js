@@ -3,7 +3,7 @@ module.exports = {
     title: `wktk.jp`,
     author: `@wk`,
     description: ``,
-    siteUrl: `https://wktk.jp/`,
+    siteUrl: `https://wktk.jp`,
     social: [
       {
         name: `Twitter`,

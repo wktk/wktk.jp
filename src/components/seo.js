@@ -52,7 +52,7 @@ function SEO({ description, lang, meta, keywords, title, ogimage }) {
               },
               {
                 property: `og:image`,
-                content: ogimage ? ogimage : data.avatar.childImageSharp.fixed.src,
+                content: `${data.site.siteMetadata.siteUrl}${ogimage ? ogimage : data.avatar.childImageSharp.fixed.src}`,
               },
             ]
               .concat(
@@ -102,6 +102,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        siteUrl
       }
     }
   }
