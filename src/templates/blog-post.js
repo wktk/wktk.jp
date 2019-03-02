@@ -28,6 +28,11 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           {post.frontmatter.date}
+          <ul class="tags">
+            {post.frontmatter.tags.map(tag =>
+              <li><Link to={`/tags/${tag}/`}>{ tag }</Link></li>
+            )}
+          </ul>
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -84,6 +89,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY-MM-DD")
         description
+        tags
       }
     }
   }
