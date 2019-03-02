@@ -18,6 +18,11 @@ function PostItem({node}) {
         </Link>
       </h3>
       <small>{node.frontmatter.date}</small>
+        <ul class="tags">
+          {node.frontmatter.tags.map(tag =>
+            <li><Link to={`/tags/${tag}/`}>{tag}</Link></li>
+          )}
+        </ul>
       <p
         dangerouslySetInnerHTML={{
           __html: node.frontmatter.description || node.excerpt,

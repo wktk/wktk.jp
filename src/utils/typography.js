@@ -7,6 +7,22 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "ul.tags": {
+      display: `inline`,
+      listStyle: `none`,
+    },
+    "ul.tags li": {
+      display: `inline`,
+    },
+    "ul.tags a": {
+      display: `inline-block`,
+      marginLeft: `0.5em`,
+      padding: `0 0.5em`,
+      background: `black`,
+      color: `white`,
+      fontSize: `80%`,
+      textDecoration: `none`,
+    },
   }
 }
 
