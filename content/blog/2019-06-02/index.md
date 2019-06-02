@@ -3,6 +3,7 @@ title: 大型特殊二種免許を取得した
 date: 2019-06-02T22:52:38+0900
 slug: entry/daitoku2
 tags: ["certificate"]
+ogimage: /ogimage/2019-06-02.jpg
 ---
 
 ブログに書こう書こうと思っていて半年以上過ぎてしまった。書いてなかったのを思い出したので書き残しておく。  
