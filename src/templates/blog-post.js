@@ -17,6 +17,7 @@ class BlogPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          ogimage={post.frontmatter.ogimage}
         />
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -90,6 +91,7 @@ export const pageQuery = graphql`
         date(formatString: "YYYY-MM-DD")
         description
         tags
+        ogimage
       }
     }
   }
