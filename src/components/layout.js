@@ -61,8 +61,8 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer style={{ textAlign: "center" }}>
-          <span>© {new Date().getFullYear()} wktk.jp, CC BY-SA 4.0</span>
-          <small style={{ display: "block" }}>Built with <a href="https://www.gatsbyjs.org">Gatsby</a></small>
+          <span>© {new Date().getFullYear()} <Link to="/">wktk.jp</Link></span>
+          <small style={{ display: "block" }}>CC BY-SA 4.0 / Built with <a href="https://www.gatsbyjs.org">Gatsby</a></small>
         </footer>
       </div>
     )
