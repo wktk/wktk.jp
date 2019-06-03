@@ -60,9 +60,9 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-          <p>© {new Date().getFullYear()} wktk.jp, CC BY-SA 4.0</p>
-          <small>Built with <a href="https://www.gatsbyjs.org">Gatsby</a></small>
+        <footer style={{ textAlign: "center" }}>
+          <span>© {new Date().getFullYear()} wktk.jp, CC BY-SA 4.0</span>
+          <small style={{ display: "block" }}>Built with <a href="https://www.gatsbyjs.org">Gatsby</a></small>
         </footer>
       </div>
     )
