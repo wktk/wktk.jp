@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
           ogimage={post.frontmatter.ogimage}
         />
         <h1>{post.frontmatter.title}</h1>
-        <p
+        <div
           style={{
             ...scale(-1 / 5),
             display: `block`,
@@ -34,7 +34,7 @@ class BlogPostTemplate extends React.Component {
               <li><Link to={`/tags/${tag}/`}>{ tag }</Link></li>
             )}
           </ul>
-        </p>
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
