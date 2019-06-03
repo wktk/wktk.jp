@@ -17,6 +17,12 @@ function SEO({ description, lang, meta, keywords, title, ogimage }) {
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            link={[
+              {
+                rel: `license`,
+                href: `https://creativecommons.org/licenses/by-sa/4.0/`,
+              }
+            ]}
             meta={[
               {
                 name: `description`,
@@ -40,6 +46,10 @@ function SEO({ description, lang, meta, keywords, title, ogimage }) {
               },
               {
                 name: `twitter:creator`,
+                content: data.site.siteMetadata.author,
+              },
+              {
+                name: `author`,
                 content: data.site.siteMetadata.author,
               },
               {
