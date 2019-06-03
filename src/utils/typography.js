@@ -23,6 +23,13 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       fontSize: `80%`,
       textDecoration: `none`,
     },
+    "ul#after-post-nav": {
+      display: `flex`,
+      flexWrap: `wrap`,
+      justifyContent: `space-between`,
+      listStyle: `none`,
+      padding: 0,
+    },
   }
 }
 
