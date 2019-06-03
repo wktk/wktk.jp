@@ -51,6 +51,7 @@ class BlogPostTemplate extends React.Component {
             listStyle: `none`,
             padding: 0,
           }}
+          class="dummy-next-posts"
         >
           <li>
             {previous && (
