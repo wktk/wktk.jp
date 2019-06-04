@@ -92,7 +92,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-	siteUrl: `https://wktk.jp`,
+        siteUrl: `https://wktk.jp`,
       },
     },
   ],
