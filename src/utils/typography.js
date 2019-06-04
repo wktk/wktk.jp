@@ -30,6 +30,17 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       listStyle: `none`,
       padding: 0,
     },
+    ".gatsby-highlight": {
+      backgroundColor: "#444",
+      color: "#eee",
+      borderRadius: "0.3em",
+      margin: "0.5em 0",
+      padding: "1em",
+      overflow: "auto",
+    },
+    ".gatsby-highlight pre": {
+      marginBottom: 0,
+    },
   }
 }
 
