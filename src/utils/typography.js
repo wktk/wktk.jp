@@ -2,8 +2,10 @@ import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
-  styles.a.color = '#e25d3e'
   return {
+    "a": {
+      color: '#e25d3a',
+    },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
