@@ -41,8 +41,8 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       backgroundColor: "#444",
       color: "#eee",
       borderRadius: "0.3em",
-      margin: "0.5em 0",
-      padding: "1em",
+      margin: `${rhythm(1)} 0`,
+      padding: rhythm(0.5),
       overflow: "auto",
     },
     ".gatsby-highlight pre": {
