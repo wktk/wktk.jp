@@ -11,15 +11,7 @@ function Bio() {
       render={data => {
         const { author, social } = data.site.siteMetadata
         return (
-          <Link
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-              color: `black`,
-              boxShadow: `none`,
-            }}
-            to={`/about/`}
-          >
+          <Link to="/about/" id="bio">
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
