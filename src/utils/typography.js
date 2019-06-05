@@ -9,11 +9,15 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "a#bio, a#bio *": {
+      margin: 0,
+    },
     "a#bio": {
       display: `flex`,
       marginBottom: rhythm(1),
       color: `black`,
       boxShadow: `none`,
+      margin: `3.5rem auto`,
     },
     "ul.tags": {
       display: `inline`,
