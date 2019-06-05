@@ -51,6 +51,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     ".gatsby-highlight pre": {
       marginBottom: 0,
     },
+    "footer": {
+      marginTop: rhythm(3),
+    },
   }
 }
 
