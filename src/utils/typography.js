@@ -16,17 +16,18 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     "ul.tags": {
       display: `inline`,
       listStyle: `none`,
+      marginLeft: 0,
     },
     "ul.tags li": {
       display: `inline`,
     },
     "ul.tags a": {
       display: `inline-block`,
-      marginLeft: `0.5em`,
-      padding: `0 0.5em`,
+      marginLeft: rhythm(0.5),
+      padding: `0 ${rhythm(0.5)}`,
       background: `black`,
       color: `white`,
-      fontSize: `80%`,
+      fontSize: rhythm(0.5),
       textDecoration: `none`,
     },
     "ul#after-post-nav": {
