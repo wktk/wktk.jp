@@ -25,8 +25,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     },
     "ul.tags a": {
       display: `inline-block`,
-      marginLeft: rhythm(0.5),
-      padding: `0 ${rhythm(0.5)}`,
+      marginLeft: rhythm(0.2),
+      padding: `0 ${rhythm(0.2)}`,
+      borderRadius: rhythm(0.1),
       background: `black`,
       color: `white`,
       fontSize: rhythm(0.5),
