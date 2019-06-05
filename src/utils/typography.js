@@ -9,7 +9,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     },
     "a#bio": {
       display: `flex`,
-      marginBottom: rhythm(2.5),
+      marginBottom: rhythm(1),
       color: `black`,
       boxShadow: `none`,
     },
