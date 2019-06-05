@@ -1,7 +1,5 @@
 import React from "react"
-import { Link, StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
-
+import { Link } from "gatsby"
 import { rhythm } from "../utils/typography"
 
 function PostItem({node}) {
