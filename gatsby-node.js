@@ -64,12 +64,16 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    createRedirect({
-      fromPath: `/tags/certificate/`,
-      isPermanent: true,
-      redirectInBrowser: true,
-      toPath: "/tags/exam/",
-    })
+    for (let [before, after] of Object.entries({
+      certificate: "exam",
+    })) {
+      createRedirect({
+        fromPath: `/tags/${before}/`,
+        toPath: `/tags/${after}/`,
+        isPermanent: true,
+        redirectInBrowser: true,
+      })
+    }
   })
 }
 
