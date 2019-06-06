@@ -4870,15 +4870,14 @@ gatsby-plugin-canonical-urls@^2.0.13:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-feed@^2.0.13:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.0.13.tgz#4a457a81d28cbe1ebb6d944272711b0a0671bbd3"
-  integrity sha512-wipPT35r+siQih+rZnKUxGFpA30RstnqtB/2JVuXeTX9ivkIjD697MOEqZTgM/8Y2IiQvr667pmDLukPPcwwuQ==
+gatsby-plugin-feed@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-2.2.2.tgz#522078455daf20832019dd9ff981ba8f6c977b6e"
+  integrity sha512-ySXj06C8uUPgfjEvvYxAwvDfse3B40ucPdXxh8+hIfT2BV+jO627wCZxdWoXBG4mo0f2G4owdk9X5GNv2tf+aA==
   dependencies:
     "@babel/runtime" "^7.0.0"
+    fs-extra "^7.0.1"
     lodash.merge "^4.6.0"
-    mkdirp "^0.5.1"
-    pify "^3.0.0"
     rss "^1.2.2"
 
 gatsby-plugin-google-analytics@^2.0.14:
