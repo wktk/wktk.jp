@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 class TagsIndex extends React.Component {
   render() {
@@ -27,20 +26,15 @@ class TagsIndex extends React.Component {
         />
         <Bio />
         <h1>All tags</h1>
-        {Object.keys(tags).map(key => {
-          return (
-            <div key={key}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={ `/tags/${key}/` }>{key}</Link>
-              </h3>
-              <small>{tags[key].length}</small>
-            </div>
-          )
-        })}
+        <ul class="tags">
+          {Object.keys(tags).map(key => {
+            return (
+              <li>
+                <Link style={{ boxShadow: `none` }} to={ `/tags/${key}/` }>{key} ({tags[key].length})</Link>
+              </li>
+            )
+          })}
+        </ul>
       </Layout>
     )
   }
