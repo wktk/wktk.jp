@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "wktk.jp",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "wktk.jp",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "wktk <k.wakitani@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/wktk/wktk.jp/issues"
   },
   "dependencies": {
     "gatsby": "^2.8.5",
@@ -41,15 +41,15 @@
     "gh-pages": "^2.0.1",
     "prettier": "^1.16.4"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/wktk/wktk.jp#readme",
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
+  "license": "UNLICENSED",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/wktk/wktk.jp.git"
   },
   "scripts": {
     "build": "gatsby build",
