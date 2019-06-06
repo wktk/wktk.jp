@@ -66,6 +66,8 @@ exports.createPages = ({ graphql, actions }) => {
 
     for (let [before, after] of Object.entries({
       certificate: "exam",
+      vps: "tech",
+      github: "tech",
     })) {
       createRedirect({
         fromPath: `/tags/${before}/`,
