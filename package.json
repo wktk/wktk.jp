@@ -8,7 +8,7 @@
     "url": "https://github.com/wktk/wktk.jp/issues"
   },
   "dependencies": {
-    "gatsby": "^2.8.5",
+    "gatsby": "^2.8.6",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-canonical-urls": "^2.0.13",
     "gatsby-plugin-google-analytics": "^2.0.14",
