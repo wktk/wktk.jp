@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "prettier": "^1.16.4"
+    "prettier": "^1.18.0"
   },
   "homepage": "https://github.com/wktk/wktk.jp#readme",
   "keywords": [
