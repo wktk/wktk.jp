@@ -58,6 +58,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     "footer": {
       marginTop: rhythm(3),
     },
+    "*[id^='twitter-widget-']": {
+      margin: `${rhythm(1)} auto !important`,
+    },
   }
 }
 
