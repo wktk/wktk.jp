@@ -18,10 +18,6 @@ function SEO({ description, lang, meta, keywords, title, ogimage }) {
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             link={[
-              {
-                rel: `license`,
-                href: `https://creativecommons.org/licenses/by-sa/4.0/`,
-              }
             ]}
             meta={[
               {
