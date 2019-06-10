@@ -102,5 +102,7 @@ module.exports = {
         siteUrl: `https://wktk.jp`,
       },
     },
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify-cache`,
   ],
 }
