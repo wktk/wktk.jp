@@ -70,7 +70,9 @@ function SEO({ description, lang, meta, keywords, title, ogimage }) {
                   : []
               )
               .concat(meta)}
-          />
+          >
+            <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?5cfeb7dd29e845fba7ea312bac1e02ec&auto_load_font=true" charset="utf-8"></script>
+          </Helmet>
         )
       }}
     />
