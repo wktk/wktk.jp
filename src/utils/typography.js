@@ -2,14 +2,7 @@ import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
-  const udFont = '"UD Shin Go Regular"'
   return {
-    "main": {
-      fontFamily: `${udFont},'Merriweather','Georgia',serif`,
-    },
-    "h1, h2, h3": {
-      fontFamily: `Montserrat,${udFont},sans-serif`,
-    },
     "a": {
       color: '#e25d3a',
     },
