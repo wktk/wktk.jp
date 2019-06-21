@@ -4830,10 +4830,10 @@ gatsby-plugin-slug@^1.0.1:
   dependencies:
     parse-filepath "^1.0.2"
 
-gatsby-plugin-twitter@^2.0.13:
-  version "2.0.13"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.0.13.tgz#f6d79c56ebae3054f633b699498a8afdc80e5259"
-  integrity sha512-FaX3CFdZrZGxY1dRbcFanEQydGgG074cVqRe8DwQs4uqTTMnm6mW4U6kHrVsoNNeoDhMhA6u+1iqe1yRlgT3+g==
+gatsby-plugin-twitter@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.1.0.tgz#6d23b29a93f6816180b750fb1efc88ff550ecccd"
+  integrity sha512-OTYzB4lRWBdQmDHehoViuTtIIEKPQ4PtK4vWFNYGEHUNdg4MGB8VmAhoFsPbkVKiV2rocVmEdvMtYkYXb9v/Pg==
   dependencies:
     "@babel/runtime" "^7.0.0"
 
