@@ -12,7 +12,7 @@ tags: ["diary"]
 
 試験の数ヶ月前から少しずつこの本を読んで勉強した。
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=wktk.hateblo.jp-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4798028061&linkId=80c4c814907e6e8fe8a424b37ca77141"></iframe>
+[ポケットスタディ情報セキュリティスペシャリスト   村山 直紀](https://www.amazon.co.jp/dp/4798028061/)
 
 要点がよくまとまっており、比較的短時間で必要な知識を習得できると思えるのでオススメの一冊。
 別の区分の参考書を買うときもこのシリーズにしようと思っている。
@@ -20,6 +20,6 @@ tags: ["diary"]
 
 秋はネットワークスペシャリスト試験を受けようと思っている。
 
-<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=wktk.hateblo.jp-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4798038199&linkId=bc6d855775159aa36b5d4988beefc80a"></iframe>
+[ポケットスタディ ネットワークスペシャリスト ［第2版］ (情報処理技術者試験)   村山 直紀](https://www.amazon.co.jp/dp/4798038199/)
 
 同じシリーズのこの本を買った。これで勉強して試験に挑む予定。
