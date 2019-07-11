@@ -52,6 +52,13 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
+    createRedirect({
+      fromPath: `/archive/`,
+      toPath: `/`,
+      isPermanent: true,
+      redirectInBrowser: true,
+    })
+
     const flatTags = Array.prototype.concat.apply([], posts.map(post => post.node.frontmatter.tags))
     const tags = Array.from(new Set(flatTags))
 
@@ -65,11 +72,14 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    for (let [before, after] of Object.entries({
+    const tagRedirects = {
       certificate: "exam",
+      programming: "tech",
       vps: "tech",
       github: "tech",
-    })) {
+    }
+
+    for (let [before, after] of Object.entries(tagRedirects)) {
       createRedirect({
         fromPath: `/tags/${before}/`,
         toPath: `/tags/${after}/`,
@@ -77,6 +87,15 @@ exports.createPages = ({ graphql, actions }) => {
         redirectInBrowser: true,
       })
     }
+
+    tags.concat(Object.keys(tagRedirects)).forEach(tag => {
+      createRedirect({
+        fromPath: `/archive/category/${tag}/`,
+        toPath: `/tags/${tag}/`,
+        isPermanent: true,
+        redirectInBrowser: true,
+      })
+    })
   })
 }
 
