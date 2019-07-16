@@ -77,6 +77,10 @@ exports.createPages = ({ graphql, actions }) => {
       programming: "tech",
       vps: "tech",
       github: "tech",
+      pxem: "tech",
+      Pxem: "tech",
+      gist: "tech",
+      Gist: "gist",
     }
 
     for (let [before, after] of Object.entries(tagRedirects)) {
