@@ -77,8 +77,6 @@ exports.createPages = ({ graphql, actions }) => {
       programming: "tech",
       vps: "tech",
       github: "tech",
-      pxem: "tech",
-      Pxem: "tech",
       gist: "tech",
       Gist: "gist",
     }
