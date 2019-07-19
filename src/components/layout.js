@@ -1,4 +1,5 @@
 import React from "react"
+import AdSense from 'react-adsense';
 import { Link } from "gatsby"
 
 import { rhythm } from "../utils/typography"
@@ -60,6 +61,12 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
+        <AdSense.Google
+          client="ca-pub-3703878768228760"
+          slot="2985375000"
+          style={{ display: "block" }}
+          data-full-width-responsive="true"
+          format="auto" />
         <footer>
           <span>© {new Date().getFullYear()} <Link to="/">wktk.jp</Link></span>
           <small style={{ float: 'right' }}>Built with <a href="https://www.gatsbyjs.org">Gatsby</a></small>
