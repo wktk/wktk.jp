@@ -62,6 +62,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     "*[id^='twitter-widget-']": {
       margin: `${rhythm(1)} auto !important`,
     },
+    ".adsbygoogle": {
+      padding: 0,
+    },
   }
 }
 
