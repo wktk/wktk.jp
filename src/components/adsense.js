@@ -5,7 +5,7 @@ export default class AdSense extends React.Component {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }
 
-render () {
+  render () {
     return (
         <ins className='adsbygoogle'
           style={{ display: 'block' }}
