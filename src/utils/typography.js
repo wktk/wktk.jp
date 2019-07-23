@@ -64,6 +64,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     },
     ".adsbygoogle": {
       padding: 0,
+      background: 'transparent',
     },
   }
 }
