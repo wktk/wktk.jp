@@ -12,4 +12,4 @@ const loadAdSense = () => {
   });
 };
 
-export const onClientEntry = loadAdSense;
+// export const onClientEntry = loadAdSense;
