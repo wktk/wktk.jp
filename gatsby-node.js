@@ -34,6 +34,13 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
+    createRedirect({
+      fromPath: 'https://wktk.netlify.com/*',
+      toPath: `https://wktk.jp/:splat`,
+      isPermanent: true,
+      force: true,
+    })
+
     // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
 
