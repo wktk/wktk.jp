@@ -100,5 +100,6 @@ module.exports = {
     `gatsby-plugin-netlify-cache`,
     'gatsby-plugin-draft',
     'gatsby-plugin-catch-links',
+    'gatsby-plugin-sitemap',
   ],
 }
