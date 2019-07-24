@@ -6,6 +6,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const tagTemplate = path.resolve(`./src/templates/tag.js`)
+  const archive = path.resolve(`./src/templates/archive.js`)
 
   return graphql(
     `
@@ -23,6 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 title
                 tags
+                date(formatString: "YYYY-MM-DD")
               }
             }
           }
@@ -57,6 +59,22 @@ exports.createPages = ({ graphql, actions }) => {
           next,
         },
       })
+    })
+
+    posts.map(
+      post => post.node.frontmatter.date.split('-').map(n => parseInt(n))
+    ).flatMap(
+      date => [date, date.slice(0, 2), [date[0]]]
+    ).filter(
+      (elem, index, self) => self.indexOf(elem) === index
+    ).forEach(date => {
+      const path = date.join('/')
+      const context = { date: path, from: new Date(date[0], date[1] ? date[1] - 1 : null, date[2] || null) }
+      date[date.length - 1] = date[date.length - 1] + 1
+      context.to = new Date(date[0], date[1] ? date[1] - 1 : null, date[2] || null)
+      console.log(context)
+      createPage({ path: `/archive/${path}/`, component: archive, context })
+      createRedirect({ fromPath: `/entry/${path}/`, toPath: `/archive/${path}/`, isParmanent: true, redirectInBrowser: true })
     })
 
     createRedirect({
