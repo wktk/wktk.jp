@@ -29,6 +29,7 @@ class AboutPage extends React.Component {
           }}
         />
         <Bio />
+        <script src="https://minmoji.ucda.jp/sealjs/https%3A__wktk.jp_" />
       </Layout>
     )
   }

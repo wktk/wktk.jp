@@ -4,11 +4,22 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
   const linkColor = '#e25d3a'
   return {
+    "@font-face": {
+      "font-family": "minmoji",
+      "src": "url('https://minmoji.ucda.jp/fontseot/https%3A__wktk.jp_')",
+      "src": "local('minmoji'), url('https://minmoji.ucda.jp/fontswoff/https%3A__wktk.jp_') format('woff'), url('https://minmoji.ucda.jp/fonts/https%3A__wktk.jp_') format('opentype')",
+    },
     "body": {
-      fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
+      fontFamily: `minmoji,YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
+    },
+    "h1": {
+      fontFamily: `Montserrat,minmoji,sans-serif`,
+    },
+    "h2": {
+      fontFamily: `minmoji,'Merriweather','Georgia',serif`,
     },
     "h3": {
-      fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
+      fontFamily: `minmoji,YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
     },
     "a": {
       color: linkColor,
