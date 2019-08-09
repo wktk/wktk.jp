@@ -42,7 +42,7 @@
     "typography-theme-wordpress-2016": "^0.16.18"
   },
   "devDependencies": {
-    "gh-pages": "^2.1.0",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
   },
   "homepage": "https://github.com/wktk/wktk.jp#readme",
