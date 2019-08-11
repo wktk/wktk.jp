@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link, StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
