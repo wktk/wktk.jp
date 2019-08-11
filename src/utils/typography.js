@@ -29,6 +29,11 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     "a#bio .link": {
       color: linkColor,
     },
+    "a#bio .mysocial": {
+      color: 'black',
+      marginRight: '0.5em',
+      boxShadow: 'none',
+    },
     "ul.tags": {
       display: `inline`,
       listStyle: `none`,
