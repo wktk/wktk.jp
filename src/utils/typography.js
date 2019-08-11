@@ -8,7 +8,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
     },
     "h3": {
-      fontFamily: `Montserrat,YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
+      fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
     },
     "a": {
       color: linkColor,
