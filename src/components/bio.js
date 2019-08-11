@@ -36,13 +36,13 @@ function Bio() {
             />
             <div style={{ flexDirection: "column" }}>
               <p>Author: <strong>{author}</strong></p>
-              <a className="mysocial" href="https://twitter.com/wk" target="_blank">
+              <a className="mysocial" href="https://twitter.com/wk" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={ faTwitter } />
               </a>
-              <a className="mysocial" href="https://github.com/wktk" target="_blank">
+              <a className="mysocial" href="https://github.com/wktk" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={ faGithub } />
               </a>
-              <a className="mysocial" href={email ? `mailto:${email}` : null} target="_blank">
+              <a className="mysocial" href={email ? `mailto:${email}` : null} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={ faEnvelope } />
               </a>
             </div>
