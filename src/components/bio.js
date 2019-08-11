@@ -15,7 +15,7 @@ function Bio() {
       render={data => {
         const { author } = data.site.siteMetadata
         return (
-          <Link to="/about/" id="bio">
+          <div id="bio">
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -30,7 +30,7 @@ function Bio() {
               }}
             />
             <div style={{ flexDirection: "column" }}>
-              <p>Author: <strong className="link">{author}</strong></p>
+              <p>Author: <strong>{author}</strong></p>
               <a className="mysocial" href="https://twitter.com/wk" target="_blank">
                 <FontAwesomeIcon icon={ faTwitter } />
               </a>
@@ -41,7 +41,7 @@ function Bio() {
                 <FontAwesomeIcon icon={ faEnvelope } />
               </a>
             </div>
-          </Link>
+          </div>
         )
       }}
     />

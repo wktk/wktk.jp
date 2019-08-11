@@ -16,20 +16,20 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
-    "a#bio, a#bio *": {
+    "#bio, #bio *": {
       margin: 0,
     },
-    "a#bio": {
+    "#bio": {
       display: `flex`,
       marginBottom: rhythm(1),
       color: `black`,
       boxShadow: `none`,
       margin: `3.5rem auto`,
     },
-    "a#bio .link": {
+    "#bio .link": {
       color: linkColor,
     },
-    "a#bio .mysocial": {
+    "#bio .mysocial": {
       color: 'black',
       marginRight: '0.5em',
       boxShadow: 'none',
