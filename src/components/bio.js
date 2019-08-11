@@ -25,10 +25,10 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
-              Author: <strong>{author}</strong><br/>
-              <Link to="/about/">About / Contact</Link>
-            </p>
+            <div style={{ flexDirection: "column" }}>
+              <p>Author: <strong>{author}</strong></p>
+              <p className="link">About / Contact</p>
+            </div>
           </Link>
         )
       }}

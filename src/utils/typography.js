@@ -2,6 +2,7 @@ import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
+  const linkColor = '#e25d3a'
   return {
     "body": {
       fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
@@ -10,7 +11,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       fontFamily: `Montserrat,YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
     },
     "a": {
-      color: '#e25d3a',
+      color: linkColor,
     },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
@@ -24,6 +25,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       color: `black`,
       boxShadow: `none`,
       margin: `3.5rem auto`,
+    },
+    "a#bio .link": {
+      color: linkColor,
     },
     "ul.tags": {
       display: `inline`,
