@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
@@ -9,13 +9,18 @@ import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { rhythm } from "../utils/typography"
 
 function Bio() {
+  const [email, setEmail] = useState(0);
+  const handleEmail = () => {
+    if (!email) setEmail(atob('ay53YWtpdGFuaUBnbWFpbC5jb20K'))
+  }
+
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
         const { author } = data.site.siteMetadata
         return (
-          <div id="bio">
+          <div id="bio" onMouseOver={handleEmail} onTouchStart={handleEmail}>
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -37,7 +42,7 @@ function Bio() {
               <a className="mysocial" href="https://github.com/wktk" target="_blank">
                 <FontAwesomeIcon icon={ faGithub } />
               </a>
-              <a className="mysocial" href="mailto:k.wakitani@gmail.com" target="_blank">
+              <a className="mysocial email" href={email ? `mailto:${email}` : null}>
                 <FontAwesomeIcon icon={ faEnvelope } />
               </a>
             </div>
