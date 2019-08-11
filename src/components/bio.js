@@ -2,6 +2,10 @@ import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
+
 import { rhythm } from "../utils/typography"
 
 function Bio() {
@@ -11,7 +15,7 @@ function Bio() {
       render={data => {
         const { author } = data.site.siteMetadata
         return (
-          <Link to="/about/" id="bio">
+          <div id="bio">
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -27,9 +31,17 @@ function Bio() {
             />
             <div style={{ flexDirection: "column" }}>
               <p>Author: <strong>{author}</strong></p>
-              <p className="link">About / Contact</p>
+              <a className="mysocial" href="https://twitter.com/wk" target="_blank">
+                <FontAwesomeIcon icon={ faTwitter } />
+              </a>
+              <a className="mysocial" href="https://github.com/wktk" target="_blank">
+                <FontAwesomeIcon icon={ faGithub } />
+              </a>
+              <a className="mysocial" href="mailto:k.wakitani@gmail.com" target="_blank">
+                <FontAwesomeIcon icon={ faEnvelope } />
+              </a>
             </div>
-          </Link>
+          </div>
         )
       }}
     />
