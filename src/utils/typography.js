@@ -34,6 +34,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       marginRight: '0.5em',
       boxShadow: 'none',
     },
+    "#bio .mysocial svg": {
+      width: '1em',
+    },
     "ul.tags": {
       display: `inline`,
       listStyle: `none`,
