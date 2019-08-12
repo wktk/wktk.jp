@@ -55,6 +55,17 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       fontSize: rhythm(0.5),
       textDecoration: `none`,
     },
+    "#share": {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      marginLeft: '0',
+    },
+    "#share li": {
+      listStyle: "none",
+      margin: 0,
+      padding: "0 0.25em",
+    },
     "ul#after-post-nav": {
       display: `flex`,
       flexWrap: `wrap`,
