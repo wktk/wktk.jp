@@ -18,6 +18,7 @@ import {
   EmailIcon,
   FacebookIcon,
 } from 'react-share'
+import HatebuShareButton from '../components/hatebu-share-button'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -55,6 +56,9 @@ class BlogPostTemplate extends React.Component {
             <TwitterShareButton url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`}>
               <TwitterIcon size={32} round />
             </TwitterShareButton>
+          </li>
+          <li>
+            <HatebuShareButton round size={32} url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`} />
           </li>
           <li>
             <FacebookShareButton url={this.props.location.href} quote={`${post.frontmatter.title} | ${siteTitle}`}>
