@@ -6,6 +6,19 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AdSense from "../components/adsense"
 import { rhythm, scale } from "../utils/typography"
+import {
+  TwitterShareButton,
+  PocketShareButton,
+  LineShareButton,
+  EmailShareButton,
+  FacebookShareButton,
+  TwitterIcon,
+  PocketIcon,
+  LineIcon,
+  EmailIcon,
+  FacebookIcon,
+} from 'react-share'
+import HatebuShareButton from '../components/hatebu-share-button'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -37,11 +50,38 @@ class BlogPostTemplate extends React.Component {
           </ul>
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+        <hr style={{ marginBottom: rhythm(1) }} />
+        <ul id="share">
+          <li>
+            <TwitterShareButton url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`}>
+              <TwitterIcon size={32} round />
+            </TwitterShareButton>
+          </li>
+          <li>
+            <HatebuShareButton round size={32} url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`} />
+          </li>
+          <li>
+            <FacebookShareButton url={this.props.location.href} quote={`${post.frontmatter.title} | ${siteTitle}`}>
+              <FacebookIcon size={32} round />
+            </FacebookShareButton>
+          </li>
+          <li>
+            <LineShareButton url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`}>
+              <LineIcon size={32} round />
+            </LineShareButton>
+          </li>
+          <li>
+            <PocketShareButton url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`}>
+              <PocketIcon size={32} round />
+            </PocketShareButton>
+          </li>
+          <li>
+            <EmailShareButton url={this.props.location.href} subject={`${post.frontmatter.title} | ${siteTitle}`}>
+              <EmailIcon size={32} round />
+            </EmailShareButton>
+          </li>
+        </ul>
+        <hr style={{ marginBottom: rhythm(1) }} />
         <Bio />
 
         <ul id="after-post-nav">
