@@ -58,6 +58,8 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       height: '24px',
       lineHeight: '24px',
       boxShadow: 'none',
+      minWidth: '5em',
+      textAlign: 'center',
     },
     "ul.tags a:before": {
       content: '""',
