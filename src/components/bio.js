@@ -4,7 +4,11 @@ import Image from "gatsby-image"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
+import {
+  faTwitter,
+  faGithub,
+  faAmazon,
+} from '@fortawesome/free-brands-svg-icons'
 
 import { rhythm } from "../utils/typography"
 
@@ -44,6 +48,9 @@ function Bio() {
               </a>
               <a className="mysocial" href={email ? `mailto:${email}` : null} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={ faEnvelope } />
+              </a>
+              <a className="mysocial" href="https://www.amazon.co.jp/hz/wishlist/ls/1GFJ2PLYLVAOF" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={ faAmazon } />
               </a>
             </div>
           </div>
