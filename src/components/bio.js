@@ -40,16 +40,16 @@ function Bio() {
             />
             <div style={{ flexDirection: "column" }}>
               <p>Author: <strong>{author}</strong></p>
-              <a className="mysocial" href="https://twitter.com/wk" target="_blank" rel="noopener noreferrer">
+              <a className="mysocial" href="https://twitter.com/wk" target="_blank" rel="noopener noreferrer" title="Twitter @wk">
                 <FontAwesomeIcon icon={ faTwitter } />
               </a>
-              <a className="mysocial" href="https://github.com/wktk" target="_blank" rel="noopener noreferrer">
+              <a className="mysocial" href="https://github.com/wktk" target="_blank" rel="noopener noreferrer" title="GitHub @wktk">
                 <FontAwesomeIcon icon={ faGithub } />
               </a>
-              <a className="mysocial" href={email ? `mailto:${email}` : null} target="_blank" rel="noopener noreferrer">
+              <a className="mysocial" href={email ? `mailto:${email}` : null} target="_blank" rel="noopener noreferrer" title="Email">
                 <FontAwesomeIcon icon={ faEnvelope } />
               </a>
-              <a className="mysocial" href="https://www.amazon.co.jp/hz/wishlist/ls/1GFJ2PLYLVAOF" target="_blank" rel="noopener noreferrer">
+              <a className="mysocial" href="https://www.amazon.co.jp/hz/wishlist/ls/1GFJ2PLYLVAOF" target="_blank" rel="noopener noreferrer" title="Amazon wishlist">
                 <FontAwesomeIcon icon={ faAmazon } />
               </a>
             </div>
