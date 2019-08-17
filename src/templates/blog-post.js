@@ -53,7 +53,7 @@ class BlogPostTemplate extends React.Component {
         <hr style={{ marginBottom: rhythm(1) }} />
         <ul id="share">
           <li>
-            <TwitterShareButton url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`}>
+            <TwitterShareButton url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`} via="wk">
               <TwitterIcon size={32} round />
             </TwitterShareButton>
           </li>
