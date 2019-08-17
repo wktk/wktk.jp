@@ -82,6 +82,8 @@ ogimage: /ogimage/2019-06-02.jpg
 
 ## 2018-11-22 成績表開示請求
 
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">こんにちは〜 (@ 警視庁 in 千代田区, 東京都) <a href="https://t.co/YInUqB4OMK">https://t.co/YInUqB4OMK</a></p>&mdash; wk (@wk) <a href="https://twitter.com/wk/status/1065422452736606208?ref_src=twsrc%5Etfw">November 22, 2018</a></blockquote>
+
 霞が関の警視庁本庁に寄って、技能試験成績表の開示請求をした。  
 
 技能試験成績表は両面印刷だが、今回はオモテ面だけを請求することにした。
@@ -102,6 +104,8 @@ ogimage: /ogimage/2019-06-02.jpg
 警視庁の HP に様式があるので、文言が最初から分かっているなら PC で作って印刷して持って行った方が良いと思う。
 
 ## 2018-12-10 成績表開示受け取り
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">大特二種の技能試験成績表を開示してもらった (@ 警視庁 in 千代田区, 東京都) <a href="https://t.co/WLhTEovvEq">https://t.co/WLhTEovvEq</a></p>&mdash; wk (@wk) <a href="https://twitter.com/wk/status/1071912381683564544?ref_src=twsrc%5Etfw">December 9, 2018</a></blockquote>
 
 朝一に警視庁に寄って技能試験成績表の写しを受け取り。  
 下図は開示決定通知書。
