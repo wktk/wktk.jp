@@ -45,7 +45,7 @@ ogimage: /ogimage/2019-11-09.jpg
 - 申請にあたっての注意事項 (任意 -- 申請自体には不要)
 - 納付書 (任意 -- 航空法施行規則 第 31 号様式を A4 普通紙で印刷すればよい)
 
-があれば申請には足りるが、値段はあまり変わらないのでセットで買ったほうが間違いがないと思われる。
+があれば航空通信士の申請には足りるが、値段はあまり変わらないのでセットで買ったほうが間違いがないと思われる。
 
 買える店はいくつかある。多分他にもある。
 
@@ -124,6 +124,7 @@ https://github.com/wktk/air-temp
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">臨海部に行くついでに早起きして遠回りして舟旅通勤社会実験に来た (@ 日本橋船着場 in 東京都) <a href="https://t.co/yxISziYvQG">https://t.co/yxISziYvQG</a> <a href="https://t.co/A04X3SDA6w">pic.twitter.com/A04X3SDA6w</a></p>&mdash; (@wk) <a href="https://twitter.com/wk/status/1157057050599469062?ref_src=twsrc%5Etfw">August 1, 2019</a></blockquote>
 
+技能証明の発行を申請するときに必要になる無線従事者資格の試験。
 航空通信士の勉強をしたのに加えて、航空特殊無線技士・第一級陸上特殊無線技士も持っているので事前知識で突破できた。
 学生が集団で受験していてかなり騒がしかった。
 
@@ -156,7 +157,7 @@ https://github.com/wktk/air-temp
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">航空従事者になった (？) <a href="https://t.co/hgQllIQz1T">pic.twitter.com/hgQllIQz1T</a></p>&mdash; (@wk) <a href="https://twitter.com/wk/status/1181429935468154880?ref_src=twsrc%5Etfw">October 8, 2019</a></blockquote>
 
-航空通信士で航空従事者従事者を自称するのは、本職の人からすれば小型特殊車免許で自動車運転免許を自称するようなものかもしれない。
+航空通信士で航空従事者を自称するのは、本職の人からすれば小型特殊車免許で自動車運転免許を自称するようなものかもしれない。
 
 C4 は航空通信士の資格コード。番号から、取得者が 400 人いないことが推測できる。
 
