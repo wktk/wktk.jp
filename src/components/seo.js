@@ -60,6 +60,10 @@ function SEO({ description, lang, meta, keywords, title, ogimage }) {
                 property: `og:image`,
                 content: `${data.site.siteMetadata.siteUrl}${ogimage ? ogimage : data.avatar.childImageSharp.fixed.src}`,
               },
+              {
+                name: `thumbnail`,
+                content: `${data.site.siteMetadata.siteUrl}${ogimage ? ogimage : data.avatar.childImageSharp.fixed.src}`,
+              },
             ]
               .concat(
                 keywords.length > 0
