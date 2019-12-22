@@ -64,6 +64,7 @@
     "develop": "gatsby develop",
     "deploy": "gatsby build && gh-pages -d public",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "new": "d=$(date '+%Y-%m-%d'); f=content/blog/$d.md; cp content/blog/template.md $f; sed -i '' \"s/[-0-9]\\{10\\}/$d/\" $f",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
