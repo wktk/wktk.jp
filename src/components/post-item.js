@@ -15,7 +15,7 @@ function PostItem({node}) {
           {title}
         </Link>
       </h3>
-      <small>{node.frontmatter.date}</small>
+      <small>{node.fields.localdate}</small>
         <ul class="tags">
           {node.frontmatter.tags.map(tag =>
             <li><Link to={`/tags/${tag}/`}>{tag}</Link></li>

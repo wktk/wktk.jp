@@ -1,5 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const moment = require("moment-timezone")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions
@@ -23,6 +24,7 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 title
                 tags
+                date
               }
             }
           }
@@ -123,5 +125,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
+
+    const localdate = moment(node.frontmatter.date).tz("Asia/Tokyo")
+    createNodeField({ name: 'localdate', node, value: localdate.format("YYYY-MM-DD HH:mm:ss") })
   }
 }

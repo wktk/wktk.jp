@@ -42,7 +42,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          {post.fields.localdate}
           <ul class="tags">
             {post.frontmatter.tags.map(tag =>
               <li><Link to={`/tags/${tag}/`}>{ tag }</Link></li>
@@ -126,6 +126,9 @@ export const pageQuery = graphql`
         description
         tags
         ogimage
+      }
+      fields {
+        localdate
       }
     }
   }
