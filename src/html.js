@@ -13,6 +13,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <script defer async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS2.0" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
