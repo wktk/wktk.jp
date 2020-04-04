@@ -85,6 +85,7 @@ ogimage: /ogimage/2019-11-09.jpg
 ## 勉強する
 
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">これ正答は (3) なのだけど (1) も誤りでないとは言い切れない気がする (GMT だったら間違いないだろうけど) (航空従事者学科試験 2018/03 通信士-航法) <a href="https://t.co/jRycYl1Ugr">pic.twitter.com/jRycYl1Ugr</a></p>&mdash; (@wk) <a href="https://twitter.com/wk/status/1140256059472265217?ref_src=twsrc%5Etfw">June 16, 2019</a></blockquote>
+
 国交省のサイトに 3 年間 6 回分の過去問・解答の PDF がある。
 問題は体感 9 割以上が過去問から出題される [^5] ので、これを中心に進めると効率がよい。
 
