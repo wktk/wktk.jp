@@ -117,6 +117,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       padding: 0,
       background: 'transparent',
     },
+    ".google-auto-placed": {
+      marginBottom: `${rhythm(1)} auto`,
+    },
   }
 }
 
