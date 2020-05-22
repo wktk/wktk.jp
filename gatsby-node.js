@@ -87,7 +87,6 @@ exports.createPages = ({ graphql, actions }) => {
       vps: "tech",
       github: "tech",
       gist: "tech",
-      Gist: "gist",
     }
 
     for (let [before, after] of Object.entries(tagRedirects)) {
@@ -102,6 +101,18 @@ exports.createPages = ({ graphql, actions }) => {
     tags.concat(Object.keys(tagRedirects)).forEach(tag => {
       createRedirect({
         fromPath: `/archive/category/${tag}/`,
+        toPath: `/tags/${tag}/`,
+        isPermanent: true,
+        redirectInBrowser: true,
+      })
+      createRedirect({
+        fromPath: `/tags/${tag[0].toUpperCase()}${tag.substr(1)}/`,
+        toPath: `/tags/${tag}/`,
+        isPermanent: true,
+        redirectInBrowser: true,
+      })
+      createRedirect({
+        fromPath: `/archive/category/${tag[0].toUpperCase()}${tag.substr(1)}/`,
         toPath: `/tags/${tag}/`,
         isPermanent: true,
         redirectInBrowser: true,
