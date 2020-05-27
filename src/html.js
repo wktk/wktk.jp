@@ -14,6 +14,24 @@ export default function HTML(props) {
         {props.headComponents}
         <script defer async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS2.0" />
+        <script src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+        <script>
+          Hatena.Star.Token = '961ceeb0dcd2fd0a3a1e021cc7819f462ace1e64';
+          Hatena.Star.SiteConfig = {
+            entryNodes: {
+              'article': {
+                uri: '.permalink',
+                title: 'h1',
+                container: 'h1'
+              },
+              '.article': {
+                uri: 'h3 a',
+                title: 'h3',
+                container: 'h3'
+              }
+            }
+          };
+        </script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

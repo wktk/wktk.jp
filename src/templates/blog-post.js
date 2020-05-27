@@ -33,7 +33,10 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
           ogimage={post.frontmatter.ogimage}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <article>
+        <a href={this.props.location.href} class="permalink" style={{ color: 'black' }}>
+          <h1>{post.frontmatter.title}</h1>
+        </a>
         <div
           style={{
             ...scale(-1 / 5),
@@ -101,6 +104,7 @@ class BlogPostTemplate extends React.Component {
           </li>
         </ul>
         <AdSense />
+        </article>
       </Layout>
     )
   }
