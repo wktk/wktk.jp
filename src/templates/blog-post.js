@@ -21,6 +21,33 @@ import {
 import HatebuShareButton from '../components/hatebu-share-button'
 
 class BlogPostTemplate extends React.Component {
+  componentDidMount() {
+    delete window.Hatena;
+
+    const script = document.createElement('script');
+    script.src = 'https://s.hatena.ne.jp/js/HatenaStar.js';
+    script.addEventListener('load', function() {
+      Hatena.Star.Token = '961ceeb0dcd2fd0a3a1e021cc7819f462ace1e64';
+      Hatena.Star.SiteConfig = {
+        entryNodes: {
+          'article': {
+            uri: '.permalink',
+            title: 'h1',
+            container: 'h1'
+          },
+          '.article': {
+            uri: 'h3 a',
+            title: 'h3',
+            container: 'h3'
+          }
+        }
+      };
+      document.body.removeChild(script);
+    });
+
+    document.body.appendChild(script);
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
