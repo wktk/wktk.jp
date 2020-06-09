@@ -3,8 +3,10 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
   const linkColor = '#e25d3a'
+  const black = '#251e47';
   return {
     "body": {
+      color: black,
       fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
     },
     "h3": {
@@ -22,7 +24,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     "#bio": {
       display: `flex`,
       marginBottom: rhythm(1),
-      color: `black`,
+      color: black,
       boxShadow: `none`,
       margin: `3.5rem auto`,
     },
@@ -30,7 +32,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       color: linkColor,
     },
     "#bio .mysocial": {
-      color: 'black',
+      color: black,
       marginRight: '0.5em',
       boxShadow: 'none',
     },
