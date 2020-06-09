@@ -1,5 +1,12 @@
+deploy:
+	yarn
+	yarn build
+	@make convert-netlify-redirect-to-firebase
+	firebase deploy
+	@make clean
+
 clean:
-	git restore firebase.json --source master
+	git restore firebase.json --source HEAD
 	test ! -f firebase.json.tmp || rm firebase.json.tmp
 
 convert-netlify-redirect-to-firebase:
