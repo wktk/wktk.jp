@@ -7,6 +7,12 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
+      - uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ hashFiles('**/yarn.lock') }}
+
       - run: make deploy
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
