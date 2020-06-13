@@ -39,6 +39,7 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: `block`,
             marginTop: rhythm(-0.5),
+            marginBottom: rhythm(0.5),
           }}
         >
           {post.fields.localdate}
