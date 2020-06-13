@@ -2,7 +2,7 @@
 title: スマホ主回線を UQ mobile にした
 date: 2019-12-22T17:17:45+0900
 slug: entry/mnp-uq-mobile
-tags: ["diary"]
+tags: [mobile]
 ogimage: /ogimage/2019-12-22.jpg
 ---
 
