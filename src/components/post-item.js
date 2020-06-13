@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { rhythm } from "../utils/typography"
+import { rhythm, scale } from "../utils/typography"
 
 function PostItem({node}) {
   const title = node.frontmatter.title || node.fields.slug
@@ -8,19 +8,27 @@ function PostItem({node}) {
     <div key={node.fields.slug}>
       <h3
         style={{
-          marginBottom: rhythm(1 / 4),
+          marginBottom: rhythm(1 / 2),
         }}
       >
         <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
           {title}
         </Link>
       </h3>
-      <small>{node.fields.localdate}</small>
-        <ul class="tags">
-          {node.frontmatter.tags.map(tag =>
-            <li><Link to={`/tags/${tag}/`}>{tag}</Link></li>
-          )}
-        </ul>
+        <div
+          style={{
+            ...scale(-1 / 5),
+            display: `block`,
+            marginBottom: rhythm(1/3),
+          }}
+        >
+          {node.fields.localdate}
+          <ul class="tags">
+            {node.frontmatter.tags.map(tag =>
+              <li><Link to={`/tags/${tag}/`}>{ tag }</Link></li>
+            )}
+          </ul>
+        </div>
       <p
         dangerouslySetInnerHTML={{
           __html: node.frontmatter.description || node.excerpt,
