@@ -2,14 +2,19 @@ import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
-  const linkColor = '#e25d3a'
-  const black = '#251e47';
+  const bg = '#fffffe'
+  const text = '#0f0e17';
+  const linkColor = '#251e67';
+  const head = '#251e47';
+
   return {
     "body": {
-      color: black,
+      color: text,
+      backgroundColor: bg,
       fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
     },
-    "h3": {
+    "h1, h2, h3": {
+      color: head,
       fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
     },
     "a": {
@@ -24,7 +29,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     "#bio": {
       display: `flex`,
       marginBottom: rhythm(1),
-      color: black,
+      color: text,
       boxShadow: `none`,
       margin: `3.5rem auto`,
     },
@@ -32,7 +37,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       color: linkColor,
     },
     "#bio .mysocial": {
-      color: black,
+      color: text,
       marginRight: '0.5em',
       boxShadow: 'none',
     },
@@ -68,9 +73,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
       position: 'absolute',
       top: '0',
       left: '0',
-      borderTop: `12px solid white`,
+      borderTop: `12px solid ${bg}`,
       borderRight: `12px solid #444`,
-      borderBottom: `12px solid white`,
+      borderBottom: `12px solid ${bg}`,
       width: '0',
       height: '24px',
     },
