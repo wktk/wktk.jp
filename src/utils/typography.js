@@ -5,6 +5,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
   const bg = '#fffffe'
   const text = '#0f0e17';
   const linkColor = '#251e67';
+  const linkHover = '#0366d6';
   const head = '#251e47';
 
   return {
@@ -19,6 +20,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     },
     "a": {
       color: linkColor,
+    },
+    "a:hover, a:active": {
+      color: linkHover,
     },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
@@ -35,6 +39,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     },
     "#bio .link": {
       color: linkColor,
+    },
+    "#bio .link:hover, #bio .link:active": {
+      color: linkHover,
     },
     "#bio .mysocial": {
       color: text,
