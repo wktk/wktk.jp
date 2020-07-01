@@ -1051,14 +1051,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
-  version "7.10.2"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
-  integrity sha512-6sF3uQw2ivImfVIl62RZ7MXhO2tap69WeWK57vAaimT6AZbE4FbqjdEJIN1UqoD6wI6B+1n9UiagafH1sxjOtg==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
-"@babel/runtime@^7.10.3":
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.10.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.3.tgz#670d002655a7c366540c67f6fd3342cd09500364"
   integrity sha512-RzGO0RLSdokm9Ipe/YD+7ww8X2Ro79qiXZF3HU9ljrM+qnJmH1Vqth+hbiQZy761LnMJTMitHDuKVYTk3k4dLw==
@@ -6833,10 +6826,10 @@ gatsby-page-utils@^0.2.12:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-canonical-urls@2.3.6:
-  version "2.3.6"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-2.3.6.tgz#35f715d312fafc17812d167d452fff7febac024a"
-  integrity sha512-WElrD1/CWRAHmsaqG7y8AKlIEQXjE5OtpRP2feXI8MOZ1xJpWmgv3USOiq+fhwCX2j1EYPUJTE1vFzL4fMlmhg==
+gatsby-plugin-canonical-urls@2.3.8:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-2.3.8.tgz#ff9c654d3e15cd024a9b99c7f17691a383210e90"
+  integrity sha512-SBqMxFU5lZ0L7OtrypAB1LkX/ZbEQSx07RdjSkB6Y86uAzsg9no7buSan1/GP20vQDR4iq3ZVGpf0BY4EjB/hw==
   dependencies:
     "@babel/runtime" "^7.10.3"
 
