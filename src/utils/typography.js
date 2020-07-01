@@ -3,7 +3,7 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
   const bg = '#fffffe'
-  const text = '#0f0e17';
+  const text = '#334';
   const linkColor = '#251e67';
   const linkHover = '#0366d6';
   const head = '#251e47';
