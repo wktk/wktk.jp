@@ -134,6 +134,10 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     ".google-auto-placed": {
       margin: `${rhythm(1)} auto`,
     },
+    ".post-thumb": {
+      float: 'right',
+      margin: `0 ${rhythm(0.5)}`,
+    },
   }
 }
 

@@ -3,6 +3,7 @@ title: Flightradar24 の feed を始めた
 date: "2019-06-04T20:50:26+0900"
 slug: entry/flightradar-feeding
 ogimage: /ogimage/2019-06-04.png
+featuredImage: ./thumb.png
 tags:
   - diary
   - radio

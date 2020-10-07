@@ -4,6 +4,7 @@ date: 2019-12-22T17:17:45+0900
 slug: entry/mnp-uq-mobile
 tags: [mobile]
 ogimage: /ogimage/2019-12-22.jpg
+featuredImage: ./SIM.JPG
 ---
 
 ![](./SIM.JPG)

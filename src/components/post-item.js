@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 
@@ -29,6 +30,14 @@ function PostItem({node}) {
             )}
           </ul>
         </div>
+        {node.frontmatter.featuredImage && <Link to={node.fields.slug}>
+          <Image
+            className="post-thumb"
+            objectFit="cover"
+            fixed={node.frontmatter.featuredImage.childImageSharp.fixed}
+            alt={`「${title}」のサムネイル`}
+          />
+        </Link>}
       <p
         dangerouslySetInnerHTML={{
           __html: node.frontmatter.description || node.excerpt,

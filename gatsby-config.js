@@ -9,9 +9,9 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
   siteMetadata: {
-    title: `wktk.jp`,
+    title: `wktk's blog`,
     author: `@wk`,
-    description: `blog`,
+    description: `wktk's blog`,
     siteUrl: `https://wktk.jp`,
     social: [
       {
@@ -44,6 +44,12 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/ogimage`,
       },
     },
     {
@@ -83,8 +89,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `wktk.jp`,
-        short_name: `wktk.jp`,
+        name: `wktk's blog`,
+        short_name: `wktk's blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
