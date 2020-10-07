@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 
@@ -29,8 +30,13 @@ function PostItem({node}) {
             )}
           </ul>
         </div>
-        {node.frontmatter.ogimage &&
-          <img class="post-thumb" src={node.frontmatter.ogimage} alt={`「${title}」のサムネイル`} />
+        {node.frontmatter.featuredImage &&
+          <Image
+            className="post-thumb"
+            objectFit="cover"
+            fixed={node.frontmatter.featuredImage.childImageSharp.fixed}
+            alt={`「${title}」のサムネイル`}
+          />
         }
       <p
         dangerouslySetInnerHTML={{

@@ -4,6 +4,7 @@ date: 2019-11-09T19:12:36+0900
 slug: entry/flight-radio-operator
 tags: ["exam", "radio"]
 ogimage: /ogimage/2019-11-09.jpg
+featuredImage: ./T.JPG
 ---
 
 [![航空通信士技能証明書](T.JPG)](T.JPG)

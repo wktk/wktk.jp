@@ -56,7 +56,13 @@ export const pageQuery = graphql`
             title
             description
             tags
-            ogimage
+            featuredImage {
+              childImageSharp {
+                fixed(width: 80, height: 80) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }

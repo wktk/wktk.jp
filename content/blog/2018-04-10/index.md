@@ -4,6 +4,7 @@ date: 2018-04-10T13:19:49+0900
 slug: entry/daitoku-samezu
 tags: ["exam"]
 ogimage: /ogimage/2018-04-10.jpg
+featuredImage: ./DUZDVCHV4AAmVSK.JPEG
 ---
 大型特殊自動車 [^1] 免許の飛び入り試験 [^2] を警視庁鮫洲運転免許試験場で受験したので、当時の記録を書いておく。  
 
