@@ -5,7 +5,7 @@ import { rhythm, scale } from "../utils/typography"
 function PostItem({node}) {
   const title = node.frontmatter.title || node.fields.slug
   return (
-    <div key={node.fields.slug}>
+    <div key={node.fields.slug} class="article">
       <h3
         style={{
           marginBottom: rhythm(1 / 2),
