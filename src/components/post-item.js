@@ -29,6 +29,9 @@ function PostItem({node}) {
             )}
           </ul>
         </div>
+        {node.frontmatter.ogimage &&
+          <img class="post-thumb" src={node.frontmatter.ogimage} alt={`「${title}」のサムネイル`} />
+        }
       <p
         dangerouslySetInnerHTML={{
           __html: node.frontmatter.description || node.excerpt,
