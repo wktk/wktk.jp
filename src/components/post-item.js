@@ -7,14 +7,8 @@ function PostItem({node}) {
   const title = node.frontmatter.title || node.fields.slug
   return (
     <div key={node.fields.slug} class="post-item">
-      <h3
-        style={{
-          marginBottom: rhythm(1 / 2),
-        }}
-      >
-        <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-          {title}
-        </Link>
+      <h3>
+        <Link to={node.fields.slug}>{title}</Link>
       </h3>
         <div class="post-meta">
           {node.fields.localdate}

@@ -155,6 +155,12 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     ".post-item": {
       position: 'relative',
     },
+    ".post-item h3": {
+      marginBottom: rhythm(1 / 2),
+    },
+    ".post-item a": {
+      boxShadow: 'none',
+    },
   }
 }
 
