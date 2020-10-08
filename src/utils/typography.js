@@ -1,7 +1,7 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
-Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
+Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
   const bg = '#fffffe'
   const text = '#334';
   const linkColor = '#251e67';
@@ -137,6 +137,23 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }, options, styles) => {
     ".post-thumb": {
       float: 'right',
       margin: `0 ${rhythm(0.5)}`,
+    },
+    ".post-meta": {
+      ...scale(-1 / 5),
+      display: `block`,
+      marginBottom: rhythm(1/3),
+    },
+    "@media screen and (min-width: 952px)": { // 672 + 140 * 2
+      ".post-meta": {
+        position: 'absolute',
+        top: '0',
+        left: rhythm(-5.5),
+        width: rhythm(5),
+        textAlign: 'right',
+      },
+    },
+    ".post-item": {
+      position: 'relative',
     },
   }
 }

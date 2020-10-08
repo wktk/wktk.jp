@@ -1,12 +1,12 @@
 import React from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 function PostItem({node}) {
   const title = node.frontmatter.title || node.fields.slug
   return (
-    <div key={node.fields.slug}>
+    <div key={node.fields.slug} class="post-item">
       <h3
         style={{
           marginBottom: rhythm(1 / 2),
@@ -16,13 +16,7 @@ function PostItem({node}) {
           {title}
         </Link>
       </h3>
-        <div
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1/3),
-          }}
-        >
+        <div class="post-meta">
           {node.fields.localdate}
           <ul class="tags">
             {node.frontmatter.tags.map(tag =>
