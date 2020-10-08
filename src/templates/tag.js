@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import AdSense from "../components/adsense"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -22,6 +23,7 @@ class TagPageTemplate extends React.Component {
         <Bio />
         <h1>Posts tagged <i>{tag}</i></h1>
         {posts.map(({ node }) => <PostItem node={node} />)}
+        <AdSense />
       </Layout>
     )
   }

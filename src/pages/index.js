@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import AdSense from "../components/adsense"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -20,6 +21,7 @@ class BlogIndex extends React.Component {
         />
         <Bio />
         {posts.map(({ node }) => <PostItem node={node} />)}
+        <AdSense />
       </Layout>
     )
   }
