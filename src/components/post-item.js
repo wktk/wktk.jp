@@ -1,7 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
-import { rhythm } from "../utils/typography"
 
 function PostItem({node}) {
   const title = node.frontmatter.title || node.fields.slug
