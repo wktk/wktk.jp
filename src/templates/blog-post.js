@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AdSense from "../components/adsense"
@@ -82,7 +81,6 @@ class BlogPostTemplate extends React.Component {
           </li>
         </ul>
         <hr style={{ marginBottom: rhythm(1) }} />
-        <Bio />
 
         <ul id="after-post-nav">
           <li>

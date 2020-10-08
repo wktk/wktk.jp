@@ -31,8 +31,6 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       margin: 0,
     },
     "#bio": {
-      display: `flex`,
-      marginBottom: rhythm(1),
       color: text,
       boxShadow: `none`,
       margin: `3.5rem auto`,
@@ -143,15 +141,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       display: `block`,
       marginBottom: rhythm(1/3),
     },
-    "@media screen and (min-width: 952px)": { // 672 + 140 * 2
-      ".post-meta": {
-        position: 'absolute',
-        top: '0',
-        left: rhythm(-5.5),
-        width: rhythm(5),
-        textAlign: 'right',
-      },
-    },
+
     ".post-item": {
       position: 'relative',
     },
@@ -160,6 +150,34 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     },
     ".post-item a": {
       boxShadow: 'none',
+    },
+
+    "#layout": {
+      marginLeft: `auto`,
+      marginRight: `auto`,
+      maxWidth: rhythm(24),
+      padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+      position: 'relative',
+    },
+
+    "@media screen and (min-width: 59.5rem)": { // rhythm(24 + 5*2)
+      "#bio-description": {
+        minWidth: rhythm(4),
+      },
+      ".post-meta": {
+        position: 'absolute',
+        top: '0',
+        left: rhythm(-5.5),
+        width: rhythm(5),
+        textAlign: 'right',
+      },
+      "#sidecol": {
+        position: 'absolute',
+        left: rhythm(24),
+        top: rhythm(5),
+        width: rhythm(5),
+        height: 0,
+      },
     },
   }
 }

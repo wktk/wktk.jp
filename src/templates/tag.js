@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import AdSense from "../components/adsense"
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostItem from "../components/post-item"
@@ -20,7 +19,6 @@ class TagPageTemplate extends React.Component {
           title={`Posts tagged ${tag}`}
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio />
         <h1>Posts tagged <i>{tag}</i></h1>
         {posts.map(({ node }) => <PostItem node={node} />)}
         <AdSense />

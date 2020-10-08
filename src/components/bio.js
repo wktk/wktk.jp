@@ -33,12 +33,13 @@ function Bio() {
                 marginBottom: 0,
                 minWidth: 50,
                 borderRadius: `100%`,
+                float: 'left',
               }}
               imgStyle={{
                 borderRadius: `50%`,
               }}
             />
-            <div style={{ flexDirection: "column" }}>
+            <div id="bio-description">
               <p>Author: <strong>{author}</strong></p>
               <a className="mysocial" href="https://twitter.com/wk" target="_blank" rel="noopener noreferrer" title="Twitter @wk">
                 <FontAwesomeIcon icon={ faTwitter } />
