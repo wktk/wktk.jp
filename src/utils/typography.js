@@ -155,6 +155,10 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       boxShadow: 'none',
     },
 
+    "#sidecol .tags": {
+      ...scale(-1 / 5),
+    },
+
     "#layout": {
       marginLeft: `auto`,
       marginRight: `auto`,
