@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
+import PostMeta from "./post-meta"
 
 function PostItem({node}) {
   const title = node.frontmatter.title || node.fields.slug
@@ -9,16 +10,7 @@ function PostItem({node}) {
       <h3>
         <Link to={node.fields.slug}>{title}</Link>
       </h3>
-      <div class="post-meta">
-        <div class="post-meta-sticky">
-          <time datetime={node.fields.localdate}>{node.fields.localdate}</time>
-          <ul class="tags">
-            {node.frontmatter.tags.map(tag =>
-              <li><Link to={`/tags/${tag}/`}>{ tag }</Link></li>
-            )}
-          </ul>
-        </div>
-      </div>
+      <PostMeta post={node} />
       {node.frontmatter.featuredImage && <Link to={node.fields.slug}>
         <Image
           className="post-thumb"

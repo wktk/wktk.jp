@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AdSense from "../components/adsense"
+import PostMeta from "../components/post-meta"
 import { rhythm } from "../utils/typography"
 import {
   TwitterShareButton,
@@ -33,16 +34,7 @@ class BlogPostTemplate extends React.Component {
           ogimage={post.frontmatter.ogimage}
         />
         <h1>{post.frontmatter.title}</h1>
-        <div class="post-meta">
-          <div class="post-meta-sticky">
-            <time datetime={post.fields.localdate}>{post.fields.localdate}</time>
-            <ul class="tags">
-              {post.frontmatter.tags.map(tag =>
-                <li><Link to={`/tags/${tag}/`}>{ tag }</Link></li>
-              )}
-            </ul>
-          </div>
-        </div>
+        <PostMeta post={post}/>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr style={{ marginBottom: rhythm(1) }} />
         <ul id="share">
