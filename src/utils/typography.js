@@ -5,6 +5,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
   const bg = '#fffffe'
   const text = '#334';
   const linkColor = '#251e67';
+  const foot = '#556';
   const linkHover = '#0366d6';
   const head = '#251e47';
 
@@ -119,9 +120,18 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     '.gatsby-highlight pre[class*="language-"]': {
       marginBottom: 0,
     },
+
     "footer": {
       marginTop: rhythm(3),
+      color: foot,
     },
+    "footer a": {
+      color: foot,
+    },
+    "footer small": {
+      float: 'right',
+    },
+
     "*[id^='twitter-widget-']": {
       margin: `${rhythm(1)} auto !important`,
     },
@@ -205,6 +215,12 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       },
       "#sidecol #bio": {
         margin: 0,
+      },
+      "footer": {
+        marginTop: rhythm(2),
+      },
+      "footer small": {
+        float: 'left',
       },
     },
   }

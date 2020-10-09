@@ -54,10 +54,6 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <SideCol />
-        <footer>
-          <span>© {new Date().getFullYear()} <Link to="/">wktk.jp</Link></span>
-          <small style={{ float: 'right' }}>Built with <a href="https://www.gatsbyjs.org">Gatsby</a></small>
-        </footer>
       </div>
     )
   }

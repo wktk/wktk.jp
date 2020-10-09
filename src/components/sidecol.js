@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Tags from "../components/tags"
@@ -29,6 +29,10 @@ function SideCol() {
           query={tagQuery}
           render={data => <Tags tags={data.tags.group.map(data => data.tag)} />}
         />
+        <footer>
+          <span>© {new Date().getFullYear()} <Link to="/">wktk.jp</Link></span>
+          <small>Built with <a href="https://www.gatsbyjs.org">Gatsby</a></small>
+        </footer>
       </div>
     </div>
   )
