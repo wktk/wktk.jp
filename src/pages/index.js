@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import AdSense from "../components/adsense"
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostItem from "../components/post-item"
@@ -19,7 +18,6 @@ class BlogIndex extends React.Component {
           title={siteTitle}
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        <Bio />
         {posts.map(({ node }) => <PostItem node={node} />)}
         <AdSense />
       </Layout>

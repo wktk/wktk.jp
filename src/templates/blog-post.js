@@ -1,11 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AdSense from "../components/adsense"
-import { rhythm, scale } from "../utils/typography"
+import PostMeta from "../components/post-meta"
+import { rhythm } from "../utils/typography"
 import {
   TwitterShareButton,
   PocketShareButton,
@@ -27,28 +27,14 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} className="blog-post">
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
           ogimage={post.frontmatter.ogimage}
         />
         <h1>{post.frontmatter.title}</h1>
-        <div
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginTop: rhythm(-0.5),
-            marginBottom: rhythm(0.5),
-          }}
-        >
-          {post.fields.localdate}
-          <ul class="tags">
-            {post.frontmatter.tags.map(tag =>
-              <li><Link to={`/tags/${tag}/`}>{ tag }</Link></li>
-            )}
-          </ul>
-        </div>
+        <PostMeta post={post}/>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr style={{ marginBottom: rhythm(1) }} />
         <ul id="share">
@@ -82,7 +68,6 @@ class BlogPostTemplate extends React.Component {
           </li>
         </ul>
         <hr style={{ marginBottom: rhythm(1) }} />
-        <Bio />
 
         <ul id="after-post-nav">
           <li>

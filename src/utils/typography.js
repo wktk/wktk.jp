@@ -5,6 +5,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
   const bg = '#fffffe'
   const text = '#334';
   const linkColor = '#251e67';
+  const foot = '#556';
   const linkHover = '#0366d6';
   const head = '#251e47';
 
@@ -31,11 +32,8 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       margin: 0,
     },
     "#bio": {
-      display: `flex`,
-      marginBottom: rhythm(1),
       color: text,
       boxShadow: `none`,
-      margin: `3.5rem auto`,
     },
     "#bio .link": {
       color: linkColor,
@@ -43,9 +41,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     "#bio .link:hover, #bio .link:active": {
       color: linkHover,
     },
-    "#bio .mysocial": {
+    "#bio .mysocial a": {
       color: text,
-      marginRight: '0.5em',
+      marginRight: '0.25em',
       boxShadow: 'none',
     },
     "#bio .mysocial svg": {
@@ -121,9 +119,18 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     '.gatsby-highlight pre[class*="language-"]': {
       marginBottom: 0,
     },
+
     "footer": {
       marginTop: rhythm(3),
+      color: foot,
     },
+    "footer a": {
+      color: foot,
+    },
+    "footer small": {
+      float: 'right',
+    },
+
     "*[id^='twitter-widget-']": {
       margin: `${rhythm(1)} auto !important`,
     },
@@ -143,15 +150,10 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       display: `block`,
       marginBottom: rhythm(1/3),
     },
-    "@media screen and (min-width: 952px)": { // 672 + 140 * 2
-      ".post-meta": {
-        position: 'absolute',
-        top: '0',
-        left: rhythm(-5.5),
-        width: rhythm(5),
-        textAlign: 'right',
-      },
+    ".blog-post .post-meta": {
+      marginTop: rhythm(-0.5),
     },
+
     ".post-item": {
       position: 'relative',
     },
@@ -160,6 +162,65 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     },
     ".post-item a": {
       boxShadow: 'none',
+    },
+
+    "#sidecol .tags": {
+      ...scale(-1 / 5),
+    },
+
+    "#layout": {
+      marginLeft: `auto`,
+      marginRight: `auto`,
+      maxWidth: rhythm(24),
+      padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+      position: 'relative',
+    },
+
+    "@media screen and (min-width: 59.5rem)": { // rhythm(24 + 5*2)
+      "#bio-description": {
+        minWidth: rhythm(4),
+      },
+      ".post-meta": {
+        position: 'absolute',
+        top: '0',
+        left: rhythm(-5.5),
+        width: rhythm(5),
+        textAlign: 'right',
+        height: '125%',
+      },
+      ".blog-post .post-meta": {
+        top: rhythm(5),
+        height: '100%',
+      },
+      ".post-meta-sticky": {
+        position: 'sticky',
+        top: 0,
+        margin: 0,
+        padding: 0,
+      },
+      ".blog-post .post-meta-sticky": {
+        top: rhythm(2),
+      },
+      "#sidecol": {
+        position: 'absolute',
+        left: rhythm(24),
+        top: rhythm(3),
+        width: rhythm(5),
+        height: '100%',
+      },
+      "#sidecol-sticky": {
+        position: 'sticky',
+        top: rhythm(2),
+      },
+      "#sidecol #bio": {
+        margin: 0,
+      },
+      "footer": {
+        marginTop: rhythm(2),
+      },
+      "footer small": {
+        float: 'left',
+      },
     },
   }
 }
