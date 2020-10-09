@@ -2,7 +2,7 @@ import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
-  const bg = '#fffffe'
+  const bg = '#fbfbfb'
   const text = '#334';
   const linkColor = '#251e67';
   const foot = '#556';
@@ -92,7 +92,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       content: '""',
       width: '6px',
       height: '6px',
-      backgroundColor: '#fff',
+      backgroundColor: bg,
       borderRadius: '100%',
     },
     "#share": {

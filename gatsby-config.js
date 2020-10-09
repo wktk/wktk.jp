@@ -60,7 +60,6 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
-              wrapperStyle: 'box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.1);',
               quality: 90,
             },
           },
