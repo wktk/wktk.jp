@@ -34,7 +34,6 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     "#bio": {
       color: text,
       boxShadow: `none`,
-      margin: `3.5rem auto`,
     },
     "#bio .link": {
       color: linkColor,
@@ -42,9 +41,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     "#bio .link:hover, #bio .link:active": {
       color: linkHover,
     },
-    "#bio .mysocial": {
+    "#bio .mysocial a": {
       color: text,
-      marginRight: '0.5em',
+      marginRight: '0.25em',
       boxShadow: 'none',
     },
     "#bio .mysocial svg": {
@@ -205,7 +204,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       "#sidecol": {
         position: 'absolute',
         left: rhythm(24),
-        top: rhythm(5),
+        top: rhythm(3),
         width: rhythm(5),
         height: '100%',
       },

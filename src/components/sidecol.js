@@ -23,6 +23,7 @@ function SideCol() {
   return (
     <div id="sidecol">
       <div id="sidecol-sticky">
+        <h3>Author</h3>
         <Bio />
         <h3>Tags</h3>
         <StaticQuery
