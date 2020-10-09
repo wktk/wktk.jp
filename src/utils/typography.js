@@ -195,7 +195,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
         width: rhythm(5),
         height: '100%',
       },
-      "#sidecol > *": {
+      "#sidecol-sticky": {
         position: 'sticky',
         top: rhythm(2),
       },

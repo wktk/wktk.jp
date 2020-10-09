@@ -5,7 +5,9 @@ import Bio from "../components/bio"
 function SideCol() {
   return (
     <div id="sidecol">
-      <Bio />
+      <div id="sidecol-sticky">
+        <Bio />
+      </div>
     </div>
   )
 }
