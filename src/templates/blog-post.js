@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AdSense from "../components/adsense"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import {
   TwitterShareButton,
   PocketShareButton,
