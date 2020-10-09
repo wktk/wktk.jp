@@ -12,13 +12,14 @@ import {
   LineShareButton,
   EmailShareButton,
   FacebookShareButton,
+  HatenaShareButton,
   TwitterIcon,
   PocketIcon,
   LineIcon,
   EmailIcon,
   FacebookIcon,
+  HatenaIcon,
 } from 'react-share'
-import HatebuShareButton from '../components/hatebu-share-button'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -44,7 +45,9 @@ class BlogPostTemplate extends React.Component {
             </TwitterShareButton>
           </li>
           <li>
-            <HatebuShareButton round size={32} url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`} />
+            <HatenaShareButton url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`}>
+              <HatenaIcon size={32} round />
+            </HatenaShareButton>
           </li>
           <li>
             <FacebookShareButton url={this.props.location.href} quote={`${post.frontmatter.title} | ${siteTitle}`}>
