@@ -5,7 +5,7 @@ import SideCol from "./sidecol.js"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { location, title, children, className } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
@@ -50,7 +50,7 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div id="layout">
+      <div id="layout" class={className}>
         <header>{header}</header>
         <main>{children}</main>
         <SideCol />

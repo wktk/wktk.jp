@@ -26,27 +26,22 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} className="blog-post">
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
           ogimage={post.frontmatter.ogimage}
         />
         <h1>{post.frontmatter.title}</h1>
-        <div
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginTop: rhythm(-0.5),
-            marginBottom: rhythm(0.5),
-          }}
-        >
-          {post.fields.localdate}
-          <ul class="tags">
-            {post.frontmatter.tags.map(tag =>
-              <li><Link to={`/tags/${tag}/`}>{ tag }</Link></li>
-            )}
-          </ul>
+        <div class="post-meta">
+          <div class="post-meta-sticky">
+            <time datetime={post.fields.localdate}>{post.fields.localdate}</time>
+            <ul class="tags">
+              {post.frontmatter.tags.map(tag =>
+                <li><Link to={`/tags/${tag}/`}>{ tag }</Link></li>
+              )}
+            </ul>
+          </div>
         </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr style={{ marginBottom: rhythm(1) }} />

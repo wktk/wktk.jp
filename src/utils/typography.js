@@ -141,6 +141,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       display: `block`,
       marginBottom: rhythm(1/3),
     },
+    ".blog-post .post-meta": {
+      marginTop: rhythm(-0.5),
+    },
 
     ".post-item": {
       position: 'relative',
@@ -172,11 +175,18 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
         textAlign: 'right',
         height: '125%',
       },
+      ".blog-post .post-meta": {
+        top: rhythm(5),
+        height: '100%',
+      },
       ".post-meta-sticky": {
         position: 'sticky',
         top: 0,
         margin: 0,
         padding: 0,
+      },
+      ".blog-post .post-meta-sticky": {
+        top: rhythm(2),
       },
       "#sidecol": {
         position: 'absolute',
