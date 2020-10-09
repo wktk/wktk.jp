@@ -170,13 +170,27 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
         left: rhythm(-5.5),
         width: rhythm(5),
         textAlign: 'right',
+        height: '125%',
+      },
+      ".post-meta-sticky": {
+        position: 'sticky',
+        top: 0,
+        margin: 0,
+        padding: 0,
       },
       "#sidecol": {
         position: 'absolute',
         left: rhythm(24),
         top: rhythm(5),
         width: rhythm(5),
-        height: 0,
+        height: '100%',
+      },
+      "#sidecol > *": {
+        position: 'sticky',
+        top: rhythm(2),
+      },
+      "#sidecol #bio": {
+        margin: 0,
       },
     },
   }
