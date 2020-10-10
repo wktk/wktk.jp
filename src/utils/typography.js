@@ -131,9 +131,13 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       float: 'right',
     },
 
-    "*[id^='twitter-widget-']": {
+    ".twitter-tweet": {
       margin: `${rhythm(1)} auto !important`,
     },
+    "iframe[id^='twitter']": {
+      marginBottom: 0,
+    },
+
     ".adsbygoogle": {
       padding: 0,
       background: 'transparent',
