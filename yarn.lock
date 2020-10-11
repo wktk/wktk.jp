@@ -7561,10 +7561,10 @@ gatsby-plugin-catch-links@2.3.15:
     "@babel/runtime" "^7.11.2"
     escape-string-regexp "^1.0.5"
 
-gatsby-plugin-draft@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-draft/-/gatsby-plugin-draft-0.0.5.tgz#ef41dba4edabab8be6690dcd6e7167ce5be32726"
-  integrity sha512-JzVJEe2dfLI3GuoQDZX1PqenXkBUyx+rbSeVgGS7U4l5i0X/5X5P4Fxs6VJSsdEO5/jemsQs0B0qjNGLyG7lPQ==
+gatsby-plugin-draft@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-draft/-/gatsby-plugin-draft-0.1.0.tgz#1a1bd7e8c333aee6d50a7d9a687466e395cb907c"
+  integrity sha512-68ivdcZZDn6020iIDj66kkNtrAsg9JLEj9OyWRr/d7HME/0e2Nw+GKhXMNzcTU/t+rPyyhBnGaqrPgtj9Ghglw==
   dependencies:
     moment-timezone "^0.5.23"
 
