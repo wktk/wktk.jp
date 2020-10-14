@@ -150,7 +150,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       margin: `0 ${rhythm(0.5)}`,
     },
     ".post-meta": {
-      ...scale(-1 / 5),
+      ...scale(-3 / 10),
       display: `block`,
       marginBottom: rhythm(1/3),
     },
