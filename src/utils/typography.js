@@ -180,6 +180,10 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       position: 'relative',
     },
 
+    "#bio-description a": {
+      boxShadow: 'none',
+    },
+
     "@media screen and (min-width: 59.5rem)": { // rhythm(24 + 5*2)
       "#bio-description": {
         minWidth: rhythm(4),

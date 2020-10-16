@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -40,7 +40,7 @@ function Bio() {
               }}
             />
             <div id="bio-description">
-              <strong>{author}</strong>
+              <Link to="/about/"><strong>{author}</strong></Link>
               <div className="mysocial">
                 <a href="https://twitter.com/wk" target="_blank" rel="noopener noreferrer" title="Twitter @wk">
                   <FontAwesomeIcon icon={ faTwitter } />
