@@ -13,23 +13,6 @@ module.exports = {
     author: `@wk`,
     description: `wktk's blog`,
     siteUrl: `https://wktk.jp`,
-    social: [
-      {
-        name: `Twitter`,
-        url: `https://twitter.com/wk`,
-        username: `wk`,
-      },
-      {
-        name: `GitHub`,
-        url: `https://github.com/wktk`,
-        username: `wktk`,
-      },
-      {
-        name: `Email`,
-        url: `mailto:k.wakitani@gmail.com`,
-        username: `k.wakitani@gmail.com`,
-      },
-    ],
   },
   plugins: [
     {

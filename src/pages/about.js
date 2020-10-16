@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -6,32 +6,30 @@ import SEO from "../components/seo"
 import Bio from "../components/bio"
 import { rhythm } from "../utils/typography"
 
-class AboutPage extends React.Component {
-  render() {
-    const { data } = this.props
-    const { title, author, social } = data.site.siteMetadata
-
-    return (
-      <Layout location={this.props.location} title={title}>
-        <SEO title={`About ${author}`} />
-        <h1>About {author}</h1>
-        <dl>
-          {social.map(s => {
-            return <React.Fragment>
-              <dt>{s.name}</dt>
-              <dd>{s.url ? <a href={s.url}>{s.username}</a> : s.username}</dd>
-            </React.Fragment>
-          })}
-        </dl>
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio />
-      </Layout>
-    )
+const AboutPage = (props) => {
+  const { data } = props
+  const { title, author } = data.site.siteMetadata
+  const [email, setEmail] = useState(0);
+  const handleEmail = () => {
+    if (!email) setEmail(atob('ay53YWtpdGFuaUBnbWFpbC5jb20K'));
   }
+
+  return (
+    <Layout location={props.location} title={title}>
+      <SEO title={`About ${author}`} />
+      <h1>About {author}</h1>
+      <dl>
+        <dt>Twitter</dt>
+        <dd><a href="https://twitter.com/wk">@wk</a></dd>
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/wktk">@wktk</a></dd>
+        <dt>Email</dt>
+        <dd ref={handleEmail}>{
+          email ? <a href={`mailto:${email}`}>{email}</a> : "loading..."
+        }</dd>
+      </dl>
+    </Layout>
+  )
 }
 
 export default AboutPage
@@ -42,11 +40,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
-        social {
-          name
-          url
-          username
-        }
       }
     }
   }
