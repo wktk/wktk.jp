@@ -47,7 +47,7 @@
     "typography-theme-wordpress-2016": "0.16.19"
   },
   "devDependencies": {
-    "firebase-tools": "8.16.2",
+    "firebase-tools": "9.1.0",
     "prettier": "2.2.1"
   },
   "homepage": "https://github.com/wktk/wktk.jp#readme",
