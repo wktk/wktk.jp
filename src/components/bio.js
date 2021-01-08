@@ -51,7 +51,7 @@ function Bio() {
                 <a href={email ? `mailto:${email}` : null} target="_blank" rel="noopener noreferrer" title="Email">
                   <FontAwesomeIcon icon={ faEnvelope } />
                 </a>
-                <a href="https://www.amazon.co.jp/hz/wishlist/ls/1GFJ2PLYLVAOF" target="_blank" rel="noopener noreferrer" title="Amazon wishlist">
+                <a href="https://www.amazon.co.jp/hz/wishlist/ls/1GFJ2PLYLVAOF?tag=4217986871-22" target="_blank" rel="noopener noreferrer" title="Amazon wishlist">
                   <FontAwesomeIcon icon={ faAmazon } />
                 </a>
               </div>

@@ -36,7 +36,7 @@ USB 通信ケーブルで繋いで手持ちの Android 端末を充電しよう�
 
 ところで数日後、Amazon でこんな商品を発見した。
 
-[PLANEX Xperia 充電&データ転送 MicroUSBケーブル ブラック (ACアダプタ/パソコン接続切替スイッチ付)BN-XPERIASB](https://www.amazon.co.jp/dp/B0040GJXYY/)
+[PLANEX Xperia 充電&データ転送 MicroUSBケーブル ブラック (ACアダプタ/パソコン接続切替スイッチ付)BN-XPERIASB](https://www.amazon.co.jp/dp/B0040GJXYY/?tag=4217986871-22)
 
 このケーブルを使えば細工せずともそのまま使える気がする。
 スイッチで通信用と充電専用とを切り替えられて、1 本 2 役で使えるらしい。最初からこれ使っとけば良かったかも。
