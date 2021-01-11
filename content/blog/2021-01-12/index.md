@@ -16,7 +16,7 @@ SC と NW を取ってから、次に DB を取ると決めて 2016 年, 2017 �
 
 午前 1 免除を維持しなかったので、若干腰が重くなってきていたが、2020 年に再受験して合格した。
 
-<blockquote class="twitter-tweet" data-lang="en" data-dnt="true"><p lang="ja" dir="ltr">データベーススペシャリストも技術士一次も受かってたから良かった <a href="https://t.co/s1ufkwB5ck">pic.twitter.com/s1ufkwB5ck</a></p>&mdash; ᅠ (@wk) <a href="https://twitter.com/wk/status/1342486281138290689?ref_src=twsrc%5Etfw">December 25, 2020</a></blockquote>
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="ja" dir="ltr">データベーススペシャリストも技術士一次も受かってたから良かった <a href="https://t.co/s1ufkwB5ck">pic.twitter.com/s1ufkwB5ck</a></p>&mdash; ᅠ (@wk) <a href="https://twitter.com/wk/status/1342486281138290689?ref_src=twsrc%5Etfw">December 25, 2020</a></blockquote>
 
 ## 勉強
 
@@ -47,6 +47,8 @@ SC と NW を取ってから、次に DB を取ると決めて 2016 年, 2017 �
 午後試験の記述は、時間に追われながらかろうじて解いた感触だった。
 記述は練習してコツを掴んでおけば有効に思えた。
 答案用紙はほとんど記入したものの、合格ラインに届く自信は半々程度だった。
+
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="ja" dir="ltr">DB, 午前 Ⅰ・午前 Ⅱ は大丈夫だったけど、午後 Ⅱ は難しかった</p>&mdash; ᅠ (@wk) <a href="https://twitter.com/wk/status/1317920005946712064?ref_src=twsrc%5Etfw">October 18, 2020</a></blockquote>
 
 ## 今後
 
