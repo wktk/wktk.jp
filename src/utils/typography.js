@@ -11,6 +11,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     foot: '#556',
     tag: '#444',
     tagText: '#fff',
+    neutral: '#888',
   };
   const darkColor = {
     bg: '#323234',
@@ -21,6 +22,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     foot: '#9aa',
     tag: '#9aa',
     tagText: '#002',
+    neutral: '#888',
   };
 
   return {
@@ -119,6 +121,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       listStyle: "none",
       margin: 0,
       padding: "0 0.25em",
+      height: '32px', /* workaround react-share buttons */
     },
     "ul#after-post-nav": {
       display: `flex`,
@@ -126,6 +129,10 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       justifyContent: `space-between`,
       listStyle: `none`,
       padding: 0,
+    },
+    "#share, ul#after-post-nav": {
+      borderTop: `1px solid ${color.neutral}`,
+      paddingTop: `1.5rem`,
     },
     ".gatsby-highlight": {
       margin: `${rhythm(1)} 0`,
@@ -287,6 +294,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       },
       "footer a": {
         color: darkColor.foot,
+      },
+      "#share, ul#after-post-nav": {
+        borderTop: `1px solid ${color.neutral}`,
       },
     },
   }

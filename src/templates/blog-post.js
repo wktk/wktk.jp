@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AdSense from "../components/adsense"
 import PostMeta from "../components/post-meta"
-import { rhythm } from "../utils/typography"
 import {
   TwitterShareButton,
   PocketShareButton,
@@ -37,7 +36,6 @@ class BlogPostTemplate extends React.Component {
         <h1>{post.frontmatter.title}</h1>
         <PostMeta post={post}/>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr style={{ marginBottom: rhythm(1) }} />
         <ul id="share">
           <li>
             <TwitterShareButton url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`} via="wk">
@@ -70,7 +68,6 @@ class BlogPostTemplate extends React.Component {
             </EmailShareButton>
           </li>
         </ul>
-        <hr style={{ marginBottom: rhythm(1) }} />
 
         <ul id="after-post-nav">
           <li>
