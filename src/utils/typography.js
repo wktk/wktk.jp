@@ -12,6 +12,16 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     tag: '#444',
     tagText: '#fff',
   };
+  const darkColor = {
+    bg: '#323234',
+    text: '#f9f9fa',
+    link: '#f2fff8',
+    linkHover: '#c2ffd8',
+    head: '#fff',
+    foot: '#9aa',
+    tag: '#9aa',
+    tagText: '#002',
+  };
 
   return {
     "body": {
@@ -232,6 +242,51 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       },
       "footer small": {
         float: 'left',
+      },
+    },
+    "@media (prefers-color-scheme: dark)": {
+      "body": {
+        color: darkColor.text,
+        backgroundColor: darkColor.bg,
+      },
+      "h1, h2, h3": {
+        color: darkColor.head,
+      },
+      "a": {
+        color: darkColor.link,
+      },
+      "a:hover, a:active": {
+        color: darkColor.linkHover,
+      },
+      "#bio": {
+        color: darkColor.text,
+      },
+      "#bio .link": {
+        color: darkColor.link,
+      },
+      "#bio .link:hover, #bio .link:active": {
+        color: darkColor.linkHover,
+      },
+      "#bio .mysocial a": {
+        color: darkColor.text,
+      },
+      "ul.tags a": {
+        background: darkColor.tag,
+        color: darkColor.tagText,
+      },
+      "ul.tags a:before": {
+        borderTop: `12px solid ${darkColor.bg}`,
+        borderRight: `12px solid ${darkColor.tag}`,
+        borderBottom: `12px solid ${darkColor.bg}`,
+      },
+      "ul.tags a:after": {
+        backgroundColor: darkColor.bg,
+      },
+      "footer": {
+        color: darkColor.foot,
+      },
+      "footer a": {
+        color: darkColor.foot,
       },
     },
   }
