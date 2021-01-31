@@ -3,8 +3,6 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Bio from "../components/bio"
-import { rhythm } from "../utils/typography"
 
 const AboutPage = (props) => {
   const { data } = props

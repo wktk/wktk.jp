@@ -16,6 +16,7 @@ function Bio() {
   const [email, setEmail] = useState(0);
   const handleEmail = () => {
     if (!email) setEmail(atob('ay53YWtpdGFuaUBnbWFpbC5jb20K'))
+    return true;
   }
 
   return (
@@ -24,7 +25,7 @@ function Bio() {
       render={data => {
         const { author } = data.site.siteMetadata
         return (
-          <div id="bio" onMouseOver={handleEmail} onTouchStart={handleEmail}>
+          <div id="bio">
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
@@ -48,7 +49,7 @@ function Bio() {
                 <a href="https://github.com/wktk" target="_blank" rel="noopener noreferrer" title="GitHub @wktk">
                   <FontAwesomeIcon icon={ faGithub } />
                 </a>
-                <a href={email ? `mailto:${email}` : null} target="_blank" rel="noopener noreferrer" title="Email">
+                <a href={email ? `mailto:${email}` : null} target="_blank" rel="noopener noreferrer" title="Email" onClick={handleEmail}>
                   <FontAwesomeIcon icon={ faEnvelope } />
                 </a>
                 <a href="https://www.amazon.co.jp/hz/wishlist/ls/1GFJ2PLYLVAOF?tag=4217986871-22" target="_blank" rel="noopener noreferrer" title="Amazon wishlist">
