@@ -2,28 +2,32 @@ import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
-  const bg = '#fbfbfb'
-  const text = '#334';
-  const linkColor = '#251e67';
-  const foot = '#556';
-  const linkHover = '#0366d6';
-  const head = '#251e47';
+  const color = {
+    bg: '#fbfbfb',
+    text: '#334',
+    link: '#251e67',
+    linkHover: '#0366d6',
+    head: '#251e47',
+    foot: '#556',
+    tag: '#444',
+    tagText: '#fff',
+  };
 
   return {
     "body": {
-      color: text,
-      backgroundColor: bg,
+      color: color.text,
+      backgroundColor: color.bg,
       fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
     },
     "h1, h2, h3": {
-      color: head,
+      color: color.head,
       fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
     },
     "a": {
-      color: linkColor,
+      color: color.link,
     },
     "a:hover, a:active": {
-      color: linkHover,
+      color: color.linkHover,
     },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
@@ -32,17 +36,17 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       margin: 0,
     },
     "#bio": {
-      color: text,
+      color: color.text,
       boxShadow: `none`,
     },
     "#bio .link": {
-      color: linkColor,
+      color: color.link,
     },
     "#bio .link:hover, #bio .link:active": {
-      color: linkHover,
+      color: color.linkHover,
     },
     "#bio .mysocial a": {
-      color: text,
+      color: color.text,
       marginRight: '0.25em',
       boxShadow: 'none',
     },
@@ -62,8 +66,8 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       marginLeft: '4px',
       padding: `0 8px 0 20px`,
       borderRadius: '2px',
-      background: `#444`,
-      color: `white`,
+      background: color.tag,
+      color: color.tagText,
       fontSize: '80%',
       textDecoration: `none`,
       position: 'relative',
@@ -78,9 +82,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       position: 'absolute',
       top: '0',
       left: '0',
-      borderTop: `12px solid ${bg}`,
-      borderRight: `12px solid #444`,
-      borderBottom: `12px solid ${bg}`,
+      borderTop: `12px solid ${color.bg}`,
+      borderRight: `12px solid ${color.tag}`,
+      borderBottom: `12px solid ${color.bg}`,
       width: '0',
       height: '24px',
     },
@@ -92,7 +96,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       content: '""',
       width: '6px',
       height: '6px',
-      backgroundColor: bg,
+      backgroundColor: color.bg,
       borderRadius: '100%',
     },
     "#share": {
@@ -122,10 +126,10 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
 
     "footer": {
       marginTop: rhythm(3),
-      color: foot,
+      color: color.foot,
     },
     "footer a": {
-      color: foot,
+      color: color.foot,
     },
     "footer small": {
       float: 'right',
