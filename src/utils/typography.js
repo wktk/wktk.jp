@@ -20,8 +20,8 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     linkHover: '#c2ffd8',
     head: '#fff',
     foot: '#9aa',
-    tag: '#9aa',
-    tagText: '#002',
+    tag: '#101015',
+    tagText: '#9aa',
     neutral: '#888',
   };
 
