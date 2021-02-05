@@ -116,6 +116,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       flexWrap: 'wrap',
       justifyContent: 'center',
       marginLeft: '0',
+      borderTop: `1px solid ${color.neutral}`,
+      borderBottom: `1px solid ${color.neutral}`,
+      padding: `1.5rem 0`,
     },
     "#share li": {
       listStyle: "none",
@@ -130,9 +133,8 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       listStyle: `none`,
       padding: 0,
     },
-    "#share, ul#after-post-nav": {
-      borderTop: `1px solid ${color.neutral}`,
-      paddingTop: `1.5rem`,
+    "hr": {
+      background: color.neutral,
     },
     ".gatsby-highlight": {
       margin: `${rhythm(1)} 0`,
@@ -295,8 +297,12 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       "footer a": {
         color: darkColor.foot,
       },
-      "#share, ul#after-post-nav": {
+      "#share": {
         borderTop: `1px solid ${color.neutral}`,
+        borderBottom: `1px solid ${color.neutral}`,
+      },
+      "hr": {
+        background: color.neutral,
       },
     },
   }
