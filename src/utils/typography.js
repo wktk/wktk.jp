@@ -207,6 +207,11 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       boxShadow: 'none',
     },
 
+    "blockquote": {
+      color: color.text,
+      borderLeftColor: color.head,
+    },
+
     "@media screen and (min-width: 59.5rem)": { // rhythm(24 + 5*2)
       "#bio-description": {
         minWidth: rhythm(4),
@@ -303,6 +308,10 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       },
       "hr": {
         background: darkColor.neutral,
+      },
+      "blockquote": {
+        color: darkColor.text,
+        borderLeftColor: darkColor.head,
       },
     },
   }
