@@ -21,7 +21,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     head: '#fff',
     foot: '#9aa',
     tag: '#101015',
-    tagText: '#9aa',
+    tagText: '#eff',
     neutral: '#888',
   };
 
