@@ -107,12 +107,6 @@ exports.createPages = ({ graphql, actions }) => {
         redirectInBrowser: true,
       })
       createRedirect({
-        fromPath: `/tags/${tag[0].toUpperCase()}${tag.substr(1)}/`,
-        toPath: `/tags/${tag}/`,
-        isPermanent: true,
-        redirectInBrowser: true,
-      })
-      createRedirect({
         fromPath: `/archive/category/${tag[0].toUpperCase()}${tag.substr(1)}/`,
         toPath: `/tags/${tag}/`,
         isPermanent: true,
