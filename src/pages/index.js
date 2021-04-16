@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import AdSense from "../components/adsense"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import PostItem from "../components/post-item"
 
 class BlogIndex extends React.Component {
@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title={siteTitle}
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />

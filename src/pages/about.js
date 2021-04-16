@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const AboutPage = (props) => {
   const { data } = props
@@ -14,7 +14,7 @@ const AboutPage = (props) => {
 
   return (
     <Layout location={props.location} title={title}>
-      <SEO title={`About ${author}`} />
+      <Seo title={`About ${author}`} />
       <h1>About {author}</h1>
       <dl>
         <dt>Twitter</dt>

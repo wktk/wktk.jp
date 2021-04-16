@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 class TagsIndex extends React.Component {
   render() {
@@ -20,7 +20,7 @@ class TagsIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title="All tags"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
