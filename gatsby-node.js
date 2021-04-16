@@ -25,6 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
                 title
                 tags
                 date
+                draft
               }
             }
           }
@@ -139,5 +140,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     const localdate = moment(node.frontmatter.date).tz("Asia/Tokyo")
     createNodeField({ name: 'localdate', node, value: localdate.format("YYYY-MM-DD HH:mm:ss") })
+
+    createNodeField({ name: 'draft', node, value: !!node.frontmatter.draft })
   }
 }
