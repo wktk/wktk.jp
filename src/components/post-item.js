@@ -6,7 +6,7 @@ import PostMeta from "./post-meta"
 function PostItem({node}) {
   const title = node.frontmatter.title || node.fields.slug
   return (
-    <div key={node.fields.slug} className="post-item">
+    <div className="post-item">
       <h3>
         <Link to={node.fields.slug}>{title}</Link>
       </h3>

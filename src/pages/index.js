@@ -18,7 +18,7 @@ class BlogIndex extends React.Component {
           title={siteTitle}
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        {posts.map(({ node }) => <PostItem node={node} />)}
+        {posts.map(({ node }) => <PostItem key={node.fields.slug} node={node} />)}
         <AdSense />
       </Layout>
     )
