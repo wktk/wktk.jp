@@ -118,7 +118,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-netlify`,
-    `gatsby-plugin-netlify-cache`,
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
     {
