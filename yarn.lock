@@ -6961,10 +6961,10 @@ gatsby-plugin-react-helmet@4.3.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-remark-footnotes@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-remark-footnotes/-/gatsby-plugin-remark-footnotes-0.0.0.tgz#b5d0c52aa4e40d06f03ea270c3dce2405f4b010d"
-  integrity sha512-9ApzmNVTuvd0DKZkzWaw6VnQ0MPPXv7ZoO9h8MAJ6m6hFiVFcsUao8M5wMrAMHaIygfgDV6avFeZu6kbgyjqeA==
+gatsby-plugin-remark-footnotes@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-remark-footnotes/-/gatsby-plugin-remark-footnotes-0.0.1.tgz#32221740afda5f8452a48442828cf87d0cd5daef"
+  integrity sha512-WI/i0CiGWEkzOclRK7wlziJLIDbuxt25v74vgVudJarsEY8+v3N8KEgsLRdUFcTmowh7n3NnKsxLiXlwTo661w==
   dependencies:
     remark-footnotes "^3.0.0"
 
