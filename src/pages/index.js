@@ -18,7 +18,7 @@ class BlogIndex extends React.Component {
           title={siteTitle}
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
-        {posts.map(({ node }) => <PostItem node={node} />)}
+        {posts.map(({ node }) => <PostItem key={node.fields.slug} node={node} />)}
         <AdSense />
       </Layout>
     )
@@ -52,9 +52,7 @@ export const pageQuery = graphql`
             tags
             featuredImage {
               childImageSharp {
-                fixed(width: 80, height: 80, quality: 100) {
-                  ...GatsbyImageSharpFixed
-                }
+                gatsbyImageData(layout: FIXED, width: 80, height: 80, quality: 100)
               }
             }
           }

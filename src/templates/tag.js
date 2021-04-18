@@ -20,7 +20,7 @@ class TagPageTemplate extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <h1>Posts tagged <i>{tag}</i></h1>
-        {posts.map(({ node }) => <PostItem node={node} />)}
+        {posts.map(({ node }) => <PostItem key={node.fields.slug} node={node} />)}
         <AdSense />
       </Layout>
     )
@@ -58,9 +58,7 @@ export const pageQuery = graphql`
             tags
             featuredImage {
               childImageSharp {
-                fixed(width: 80, height: 80, quality: 100) {
-                  ...GatsbyImageSharpFixed
-                }
+                gatsbyImageData(layout: FIXED, width: 80, height: 80, quality: 100)
               }
             }
           }

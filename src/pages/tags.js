@@ -26,10 +26,10 @@ class TagsIndex extends React.Component {
         />
         <Bio />
         <h1>All tags</h1>
-        <ul class="tags">
+        <ul className="tags">
           {Object.keys(tags).map(key => {
             return (
-              <li>
+              <li key={key}>
                 <Link style={{ boxShadow: `none` }} to={ `/tags/${key}/` }>{key} ({tags[key].length})</Link>
               </li>
             )

@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 const Tags = ({ tags }) => {
   return (
     <ul className="tags">
-      {tags.map(tag => <li><Link to={`/tags/${tag}/`}>{ tag }</Link></li>)}
+      {tags.map(tag => <li key={tag}><Link to={`/tags/${tag}/`}>{ tag }</Link></li>)}
     </ul>
   )
 }
