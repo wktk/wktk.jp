@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
+import { getSrc } from "gatsby-plugin-image"
 
 function Seo({ description, lang, meta, keywords, title, ogimage }) {
   return (
@@ -62,11 +63,11 @@ function Seo({ description, lang, meta, keywords, title, ogimage }) {
               },
               {
                 property: `og:image`,
-                content: `${data.site.siteMetadata.siteUrl}${ogimage ? ogimage : data.avatar.childImageSharp.fixed.src}`,
+                content: `${data.site.siteMetadata.siteUrl}${ogimage ? ogimage : getSrc(data.avatar)}`,
               },
               {
                 name: `thumbnail`,
-                content: `${data.site.siteMetadata.siteUrl}${ogimage ? ogimage : data.avatar.childImageSharp.fixed.src}`,
+                content: `${data.site.siteMetadata.siteUrl}${ogimage ? ogimage : getSrc(data.avatar)}`,
               },
             ]
               .concat(
@@ -106,9 +107,7 @@ const detailsQuery = graphql`
   query DefaultSEOQuery {
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
-        fixed(width: 400, height: 400) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FIXED, width: 400, height: 400)
       }
     }
     site {

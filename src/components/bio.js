@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -26,8 +26,8 @@ function Bio() {
         const { author } = data.site.siteMetadata
         return (
           <div id="bio">
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
+            <GatsbyImage
+              image={getImage(data.avatar)}
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
@@ -68,9 +68,7 @@ const bioQuery = graphql`
   query BioQuery {
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
+        gatsbyImageData(layout: FIXED, width: 50, height: 50)
       }
     }
     site {

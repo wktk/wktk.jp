@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import PostMeta from "./post-meta"
 
@@ -12,10 +12,10 @@ function PostItem({node}) {
       </h3>
       <PostMeta post={node} />
       {node.frontmatter.featuredImage && <Link to={node.fields.slug}>
-        <Image
+        <GatsbyImage
           className="post-thumb"
           objectFit="cover"
-          fixed={node.frontmatter.featuredImage.childImageSharp.fixed}
+          image={getImage(node.frontmatter.featuredImage)}
           alt={`「${title}」のサムネイル`}
         />
       </Link>}
