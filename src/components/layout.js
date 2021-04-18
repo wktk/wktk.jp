@@ -50,7 +50,7 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div id="layout" class={className}>
+      <div id="layout" className={className}>
         <header>{header}</header>
         <main>{children}</main>
         <SideCol />
