@@ -7058,11 +7058,6 @@ gatsby-plugin-sitemap@4.3.0:
     minimatch "^3.0.4"
     sitemap "^7.0.0"
 
-gatsby-plugin-slug@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-slug/-/gatsby-plugin-slug-1.1.1.tgz#2628c8256909b9c166717096ec7e701a91392b67"
-  integrity sha512-7S0vz/nTcTsgpKims8zNgUd4pNcAYjsuUKUzylvPM1TZVUsEsbB9kzQ8vx4uR4Fo3DSciVoynj+1Sn29fZXx7w==
-
 gatsby-plugin-twitter@3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-3.7.0.tgz#3d51b8848f13d3d38817bad24e3701945dd20181"
