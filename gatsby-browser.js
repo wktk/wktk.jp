@@ -24,7 +24,7 @@ const appendAdSense = () => {
   appendScript('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
 }
 
-const isNarrowClient = () => document.body.offsetWidth < 950
+const isNarrowClient = () => true // document.body.offsetWidth < 950
 
 const appendExternalScripts = () => {
   appendTwitter()
