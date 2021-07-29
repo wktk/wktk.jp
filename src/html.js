@@ -14,6 +14,8 @@ export default function HTML(props) {
         {props.headComponents}
         <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS2.0" />
         <link rel="author" href="http://www.hatena.ne.jp/kw5/" />
+        <link rel="prefetch" href="https://platform.twitter.com/widgets.js" as="script" />
+        <link rel="prefetch" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" as="script" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
