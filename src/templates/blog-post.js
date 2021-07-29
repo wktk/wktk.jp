@@ -21,6 +21,12 @@ import {
 } from 'react-share'
 
 class BlogPostTemplate extends React.Component {
+  componentDidMount() {
+    if (window.twttr && window.twttr.widgets && typeof window.twttr.widgets.load === 'function') {
+      window.twttr.widgets.load()
+    }
+  }
+
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title

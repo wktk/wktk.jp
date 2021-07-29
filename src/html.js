@@ -12,7 +12,6 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-        <script defer async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS2.0" />
         <link rel="author" href="http://www.hatena.ne.jp/kw5/" />
       </head>
