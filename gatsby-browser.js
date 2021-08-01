@@ -7,6 +7,7 @@ const appendScript = (url) => {
   const script = document.createElement('script')
   script.src = url
   script.defer = script.async = true
+  script.crossorigin = 'anonymous'
   document.head.appendChild(script)
 }
 
@@ -21,7 +22,7 @@ const appendAdSense = () => {
   if (!document.querySelector('.adsbygoogle')) return
   if ((window.adsbygoogle || {}).loaded) return
 
-  appendScript('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+  appendScript('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3703878768228760')
 }
 
 const isNarrowClient = () => true // document.body.offsetWidth < 950
