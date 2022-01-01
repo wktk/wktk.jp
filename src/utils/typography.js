@@ -37,12 +37,15 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     },
     "a": {
       color: color.link,
+      boxShadow: `none`,
+      textDecoration: 'underline',
     },
     "a:hover, a:active": {
       color: color.linkHover,
+      textDecoration: 'none',
     },
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
+    "h1 a, h2 a, h3 a": {
+      textDecoration: 'none',
     },
     "#bio, #bio *": {
       margin: 0,
@@ -50,6 +53,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     "#bio": {
       color: color.text,
       boxShadow: `none`,
+    },
+    "#bio a": {
+      textDecoration: 'none',
     },
     "#bio .link": {
       color: color.link,
