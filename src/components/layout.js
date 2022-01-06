@@ -32,7 +32,6 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `sans-serif`,
             marginTop: 0,
           }}
         >

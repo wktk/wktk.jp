@@ -33,6 +33,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     },
     "h1, h2, h3": {
       color: color.head,
+      fontFamily: `"Hiragino Sans", sans-serif`,
+    },
+    ".blog-post main h1, .blog-post main h2, .blog-post main h3, .post-item h3": {
       fontFamily: `YuGothicM,YuGothic,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif`,
     },
     "a": {
