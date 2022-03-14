@@ -69,7 +69,7 @@ exports.createPages = ({ graphql, actions }) => {
       redirectInBrowser: true,
     })
 
-    const flatTags = Array.prototype.concat.apply([], posts.map(post => post.node.frontmatter.tags))
+    const flatTags = Array.prototype.concat.apply([], posts.map(post => post.node.frontmatter.tags).filter(it => it))
     const tags = Array.from(new Set(flatTags))
 
     tags.forEach(tag => {
