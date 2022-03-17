@@ -7,7 +7,6 @@
   "bugs": {
     "url": "https://github.com/wktk/wktk.jp/issues"
   },
-  "resolutions": { "sharp": "0.29.3" },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.3.0",
     "@fortawesome/free-brands-svg-icons": "6.1.0",
@@ -23,7 +22,7 @@
     "gatsby-plugin-react-helmet": "5.10.0",
     "gatsby-plugin-remark-footnotes": "0.0.1",
     "gatsby-plugin-robots-txt": "1.7.0",
-    "gatsby-plugin-sharp": "4.10.0",
+    "gatsby-plugin-sharp": "4.7.0",
     "gatsby-plugin-sitemap": "5.10.0",
     "gatsby-plugin-typography": "4.10.0",
     "gatsby-remark-copy-linked-files": "5.10.0",
