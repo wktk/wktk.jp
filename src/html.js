@@ -16,6 +16,9 @@ export default function HTML(props) {
         <link rel="author" href="http://www.hatena.ne.jp/kw5/" />
         <link rel="prefetch" href="https://platform.twitter.com/widgets.js" as="script" />
         <link rel="prefetch" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-370387876822876" as="script" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&display=swap" rel="stylesheet" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
