@@ -12,7 +12,7 @@
     "@fortawesome/free-brands-svg-icons": "6.1.1",
     "@fortawesome/free-solid-svg-icons": "6.1.1",
     "@fortawesome/react-fontawesome": "0.2.0",
-    "gatsby": "4.19.0",
+    "gatsby": "4.19.1",
     "gatsby-plugin-canonical-urls": "4.19.0",
     "gatsby-plugin-catch-links": "4.19.0",
     "gatsby-plugin-feed": "4.19.0",
