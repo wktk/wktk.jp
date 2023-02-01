@@ -46,7 +46,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt
+          excerpt(truncate: true)
           fields {
             slug
             localdate
