@@ -1,5 +1,5 @@
 ---
-title: 情報処理技術者試験の提出答案のコピーをもらう方法
+title: 情報処理技術者試験の答案を開示請求してコピーをもらう方法
 date: 2023-02-01T00:15:13+0900
 slug: entry/disclose-itee-answer-sheet
 tags: [exam]
