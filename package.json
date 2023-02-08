@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "firebase-tools": "11.22.0",
-    "prettier": "2.8.3"
+    "prettier": "2.8.4"
   },
   "homepage": "https://github.com/wktk/wktk.jp#readme",
   "keywords": [
