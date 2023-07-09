@@ -41,7 +41,7 @@
     "react-helmet": "6.1.0",
     "react-share": "4.4.1",
     "react-typography": "0.16.23",
-    "typography": "0.16.21",
+    "typography": "0.16.24",
     "typography-theme-wordpress-2016": "0.16.19"
   },
   "devDependencies": {
