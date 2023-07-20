@@ -45,8 +45,7 @@
     "typography-theme-wordpress-2016": "0.16.19"
   },
   "devDependencies": {
-    "firebase-tools": "12.4.5",
-    "prettier": "2.8.8"
+    "firebase-tools": "12.4.5"
   },
   "homepage": "https://github.com/wktk/wktk.jp#readme",
   "keywords": [
@@ -62,7 +61,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "gatsby build && gh-pages -d public",
-    "format": "prettier --write src/**/*.{js,jsx}",
     "new": "d=$(date '+%Y-%m-%d'); f=content/blog/$d.md; cp content/blog/template.md $f; sed -i '' \"s/[-0-9]\\{10\\}/$d/\" $f",
     "start": "npm run develop",
     "serve": "gatsby serve",
