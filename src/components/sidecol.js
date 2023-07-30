@@ -8,11 +8,11 @@ function SideCol() {
   const tagQuery = graphql`
     {
       tags: allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: {frontmatter: {date: DESC}}
         limit: 1000
         filter: { fields: { draft: { eq: false } } }
       ) {
-        group(field: frontmatter___tags) {
+        group(field: {frontmatter: {tags: SELECT}}) {
           tag: fieldValue
           totalCount
         }
