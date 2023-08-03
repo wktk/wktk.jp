@@ -1,12 +1,11 @@
-name: Deploy to Firebase Hosting
-on:
-  push:
-    branches:
-      - master
+name: Deploy to Firebase Hosting on PR
+on: pull_request
 
 jobs:
-  firebase-deploy:
+  build_and_preview:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
@@ -29,22 +28,6 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WKTKJP }}'
-          channelId: live
           projectId: wktkjp
 
       - run: make clean
-
-      - name: Generate tag
-        id: generate-tag
-        run: echo "::set-output name=value::$(date '+%Y%m%d-%H%M%S')"
-        env:
-          TZ: Asia/Tokyo
-
-      - name: Create Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ steps.generate-tag.outputs.value }}
-          release_name: Deployment @ ${{ steps.generate-tag.outputs.value }}
-          body: Deployment @ ${{ steps.generate-tag.outputs.value }}
