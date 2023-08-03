@@ -1,4 +1,4 @@
-name: Deploy to Firebase
+name: Deploy to Firebase Hosting
 on:
   push:
     branches:
@@ -8,11 +8,12 @@ jobs:
   firebase-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      
+      - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: yarn
 
       - uses: actions/cache@v3
         with:
@@ -20,9 +21,18 @@ jobs:
             **/node_modules
           key: ${{ hashFiles('**/yarn.lock') }}
 
-      - run: make deploy
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: make convert-netlify-redirect-to-firebase
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WKTKJP }}'
+          channelId: live
+          projectId: wktkjp
+
+      - run: make clean
 
       - name: Generate tag
         id: generate-tag

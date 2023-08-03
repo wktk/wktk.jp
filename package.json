@@ -44,9 +44,7 @@
     "typography": "0.16.24",
     "typography-theme-wordpress-2016": "0.16.19"
   },
-  "devDependencies": {
-    "firebase-tools": "12.4.6"
-  },
+  "devDependencies": {},
   "homepage": "https://github.com/wktk/wktk.jp#readme",
   "keywords": [
     "gatsby"

@@ -2,7 +2,7 @@ deploy:
 	yarn
 	yarn build
 	@make convert-netlify-redirect-to-firebase
-	./node_modules/.bin/firebase deploy
+	firebase deploy
 	@make clean
 
 clean:
