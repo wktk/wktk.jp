@@ -3,6 +3,7 @@ on: pull_request
 
 # Dependabot gets read-only access by default
 permissions:
+  checks: write
   pull-requests: write
 
 jobs:
