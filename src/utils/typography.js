@@ -221,6 +221,23 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     "blockquote": {
       color: color.text,
       borderLeftColor: color.head,
+      marginLeft: rhythm(3 / 4),
+      fontSize: '1em',
+    },
+    "@media screen and (max-width: 480px)": {
+      "blockquote": {
+        marginLeft: 0,
+      },
+    },
+    "ul, ol": {
+      marginLeft: rhythm(1),
+    },
+    "li > ul": {
+      marginBottom: rhythm(1 / 4),
+      marginTop: rhythm(1 / 4),
+    },
+    "li": {
+      marginBottom: rhythm(1 / 4),
     },
 
     "@media screen and (min-width: 59.5rem)": { // rhythm(24 + 5*2)
