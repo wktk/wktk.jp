@@ -29,7 +29,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     "body": {
       color: color.text,
       backgroundColor: color.bg,
-      fontFamily: `"Helvetica Neue", Arial, 'BIZ UDGothic', "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif`,
+      fontFamily: `"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif`,
     },
     "h1, h2, h3": {
       fontFamily: `"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif`,
