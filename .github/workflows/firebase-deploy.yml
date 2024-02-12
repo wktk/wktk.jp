@@ -33,18 +33,3 @@ jobs:
           projectId: wktkjp
 
       - run: make clean
-
-      - name: Generate tag
-        id: generate-tag
-        run: echo "::set-output name=value::$(date '+%Y%m%d-%H%M%S')"
-        env:
-          TZ: Asia/Tokyo
-
-      - name: Create Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ steps.generate-tag.outputs.value }}
-          release_name: Deployment @ ${{ steps.generate-tag.outputs.value }}
-          body: Deployment @ ${{ steps.generate-tag.outputs.value }}
