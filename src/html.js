@@ -12,7 +12,6 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-        <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS2.0" />
         <link rel="author" href="http://www.hatena.ne.jp/kw5/" />
         <link rel="prefetch" href="https://platform.twitter.com/widgets.js" as="script" />
         <link rel="prefetch" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-370387876822876" as="script" />

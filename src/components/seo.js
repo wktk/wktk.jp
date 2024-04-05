@@ -19,6 +19,12 @@ function Seo({ description, lang, meta, keywords, title, ogimage }) {
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             link={[
+              {
+                rel: "alternate",
+                type: "application/rss+xml",
+                href: data.site.siteMetadata.siteUrl + "/rss.xml",
+                title: "RSS2.0",
+              },
             ]}
             meta={[
               {
