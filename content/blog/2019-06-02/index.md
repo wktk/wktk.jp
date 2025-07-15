@@ -1,6 +1,7 @@
 ---
 title: 大型特殊二種免許を取得した
 date: 2019-06-02T22:52:38+0900
+updated: 2022-01-04T18:39:09+09:00
 slug: entry/daitoku2
 tags: ["exam"]
 ogimage: /ogimage/2019-06-02.jpg

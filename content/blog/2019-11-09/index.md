@@ -1,6 +1,7 @@
 ---
 title: 航空通信士 (航空従事者) の技能証明を取得した
 date: 2019-11-09T19:12:36+0900
+updated: 2023-02-01T01:44:47+09:00
 slug: entry/flight-radio-operator
 tags: ["exam", "radio"]
 ogimage: /ogimage/2019-11-09.jpg

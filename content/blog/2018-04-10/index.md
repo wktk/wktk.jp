@@ -1,6 +1,7 @@
 ---
 title: 鮫洲で大型特殊免許の一発試験を受験した
 date: 2018-04-10T13:19:49+0900
+updated: 2020-10-07T21:34:24+09:00
 slug: entry/daitoku-samezu
 tags: ["exam"]
 ogimage: /ogimage/2018-04-10.jpg

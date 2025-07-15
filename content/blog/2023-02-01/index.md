@@ -1,6 +1,7 @@
 ---
 title: 情報処理技術者試験の答案を開示請求してコピーをもらう方法
 date: 2023-02-01T00:15:13+0900
+updated: 2023-10-30T02:36:39+09:00
 slug: entry/disclose-itee-answer-sheet
 tags: [exam]
 ogimage: /ogimage/2023-02-01.jpg
