@@ -134,6 +134,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
     const localdate = moment(node.frontmatter.date).tz("Asia/Tokyo")
     createNodeField({ name: 'localdate', node, value: localdate.format("YYYY-MM-DD HH:mm:ss") })
+    const updatedDate = node.frontmatter.updated ? moment(node.frontmatter.updated).tz("Asia/Tokyo") : null
+    createNodeField({ name: 'updatedDate', node, value: updatedDate?.format("YYYY-MM-DD HH:mm:ss") })
 
     createNodeField({ name: 'draft', node, value: !!node.frontmatter.draft })
   }

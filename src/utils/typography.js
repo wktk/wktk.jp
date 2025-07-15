@@ -198,6 +198,10 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       display: `block`,
       marginBottom: rhythm(1/3),
     },
+    ".post-meta time": {
+      display: 'inline-block',
+      paddingRight: rhythm(1 / 4),
+    },
     ".blog-post .post-meta": {
       marginTop: rhythm(-0.5),
     },

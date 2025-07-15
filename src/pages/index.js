@@ -44,6 +44,7 @@ export const pageQuery = graphql`
           fields {
             slug
             localdate
+            updatedDate
           }
           frontmatter {
             date(formatString: "YYYY-MM-DD")

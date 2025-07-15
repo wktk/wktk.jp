@@ -50,9 +50,11 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
           ogimage={post.frontmatter.ogimage}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <PostMeta post={post}/>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <article itemScope itemType="https://schema.org/BlogPosting">
+          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+          <PostMeta post={post}/>
+          <div itemProp="articleBody" dangerouslySetInnerHTML={{ __html: post.html }} />
+        </article>
         <div id="share">
           <ul>
           <li>
@@ -137,13 +139,13 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "YYYY-MM-DD")
         description
         tags
         ogimage
       }
       fields {
         localdate
+        updatedDate
       }
     }
   }
