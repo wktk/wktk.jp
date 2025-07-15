@@ -7,18 +7,18 @@ import AdSense from "../components/adsense"
 import PostMeta from "../components/post-meta"
 import {
   TwitterShareButton,
-  PocketShareButton,
   LineShareButton,
   EmailShareButton,
   FacebookShareButton,
   HatenaShareButton,
   TwitterIcon,
-  PocketIcon,
   LineIcon,
   EmailIcon,
   FacebookIcon,
   HatenaIcon,
 } from 'react-share'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCheck, faCopy } from "@fortawesome/free-solid-svg-icons"
 
 class BlogPostTemplate extends React.Component {
   componentDidMount() {
@@ -32,6 +32,17 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
+    const copy = async () => {
+      const text = `${post.frontmatter.title}\n${this.props.location.href}`
+      try {
+        await navigator.clipboard.writeText(text)
+        this.setState({ copied: true })
+        setTimeout(() => this.setState({ copied: false }), 2000)
+      } catch (err) {
+        console.error('Failed to copy: ', err)
+      }
+    }
+
     return (
       <Layout location={this.props.location} title={siteTitle} className="blog-post">
         <Seo
@@ -42,7 +53,8 @@ class BlogPostTemplate extends React.Component {
         <h1>{post.frontmatter.title}</h1>
         <PostMeta post={post}/>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <ul id="share">
+        <div id="share">
+          <ul>
           <li>
             <TwitterShareButton url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`} via="wk">
               <TwitterIcon size={32} round />
@@ -64,16 +76,28 @@ class BlogPostTemplate extends React.Component {
             </LineShareButton>
           </li>
           <li>
-            <PocketShareButton url={this.props.location.href} title={`${post.frontmatter.title} | ${siteTitle}`}>
-              <PocketIcon size={32} round />
-            </PocketShareButton>
-          </li>
-          <li>
             <EmailShareButton url={this.props.location.href} subject={`${post.frontmatter.title} | ${siteTitle}`}>
               <EmailIcon size={32} round />
             </EmailShareButton>
           </li>
+          <li>
+            <div style={{
+              display: 'inline-block',
+              width: '32px',
+              height: '32px',
+              cursor: 'pointer',
+              backgroundColor: this.state?.copied ? '#6c6' : '#c66',
+              borderRadius: '50%',
+              textAlign: 'center',
+              lineHeight: '32px'
+            }}>
+              <FontAwesomeIcon icon={this.state?.copied ? faCheck : faCopy} onClick={copy} />
+            </div>
+          </li>
         </ul>
+
+        <small>記事の内容を引用・参考にする際は参考文献として記載いただくようお願いします。</small>
+        </div>
 
         <ul id="after-post-nav">
           <li>

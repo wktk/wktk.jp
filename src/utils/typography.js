@@ -124,18 +124,28 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
     },
     "#share": {
       display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'center',
-      marginLeft: '0',
+      flexDirection: 'column',
+      alignItems: 'center',
       borderTop: `1px solid ${color.neutral}`,
       borderBottom: `1px solid ${color.neutral}`,
-      padding: `1.5rem 0`,
+      padding: `1rem 0`,
+      marginBottom: rhythm(0.5),
+    },
+    "#share ul": {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      margin: '0',
+      marginBottom: rhythm(0.5),
     },
     "#share li": {
       listStyle: "none",
       margin: 0,
       padding: "0 0.25em",
       height: '32px', /* workaround react-share buttons */
+    },
+    "#share small": {
+      color: color.foot,
     },
     "ul#after-post-nav": {
       display: `flex`,
@@ -333,6 +343,9 @@ Wordpress2016.overrideThemeStyles = ({ rhythm, scale }, options, styles) => {
       "#share": {
         borderTop: `1px solid ${darkColor.neutral}`,
         borderBottom: `1px solid ${darkColor.neutral}`,
+      },
+      "#share small": {
+        color: darkColor.foot,
       },
       "hr": {
         background: darkColor.neutral,
