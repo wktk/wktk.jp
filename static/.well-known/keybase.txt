@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/wktk
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://wktk.jp
+  * I am wktk (https://keybase.io/wktk) on keybase.
+  * I have a public key ASCktG49I7wTj2RY1YYdPTHgcdJeDLnTXRbU4Cu6l7zp6go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a4b46e3d23bc138f6458d5861d3d31e071d25e0cb9d35d16d4e02bba97bce9ea0a",
+      "host": "keybase.io",
+      "kid": "0120a4b46e3d23bc138f6458d5861d3d31e071d25e0cb9d35d16d4e02bba97bce9ea0a",
+      "uid": "67039e368faaaa72d6667fe239c3f519",
+      "username": "wktk"
+    },
+    "merkle_root": {
+      "ctime": 1756181103,
+      "hash": "7f68ca27a99a4132885e933c5a2ed94079330d9dd286347c2bac0f9f364d40b3881d61d3b626bbe062b7349b54177fc0ab85f684047f2159d5562c718d0e02e5",
+      "hash_meta": "ad5fcc0a53f82966aec5b0345c3baf4b19e0d89d370eb03fba26e9961c6a676a",
+      "seqno": 27044780
+    },
+    "service": {
+      "entropy": "QzB1kCqnd1eJ/2dggUKj02gN",
+      "hostname": "wktk.jp",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.1"
+  },
+  "ctime": 1756181366,
+  "expire_in": 504576000,
+  "prev": "8b8ec5e2b1f711e2d25bc27035c36403efb6e8aaaa3d9530331c2a7531e79d37",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgpLRuPSO8E49kWNWGHT0x4HHSXgy5010W1OArupe86eoKp3BheWxvYWTESpcCBsQgi47F4rH3EeLSW8JwNcNkA++26KqqPZUwMxwqdTHnnTfEIJhFnNDljBZH6zRu9ap6Ha8XGr29UJV3drdTt3w+4dp5AgHCo3NpZ8RAMlUeicue001uTyhPKtid5F/MUVoWU9m/M570plj1KGlcFH137vnuc50u+Jv98+MHChnsYT32UsHuAOFwFAQ+BKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBSV7j9f+ODzc0yNS0CQDV44H+D0eAdztRCLj1CTz075o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wktk
+
+==================================================================
