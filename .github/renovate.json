@@ -7,6 +7,9 @@
       "automerge": true
     }
   ],
+  "lockFileMaintenance": {
+    "enabled": true,
+  },
   "schedule": [
     "after 7am",
     "before 1pm"
