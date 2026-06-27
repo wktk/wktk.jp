@@ -93,7 +93,7 @@ class BlogPostTemplate extends React.Component {
               textAlign: 'center',
               lineHeight: '32px'
             }}>
-              <FontAwesomeIcon icon={this.state?.copied ? faCheck : faCopy} onClick={copy} />
+              <FontAwesomeIcon icon={this.state?.copied ? faCheck : faCopy} onClick={copy} color="white" />
             </div>
           </li>
         </ul>
