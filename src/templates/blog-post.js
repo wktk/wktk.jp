@@ -88,7 +88,7 @@ class BlogPostTemplate extends React.Component {
               width: '32px',
               height: '32px',
               cursor: 'pointer',
-              backgroundColor: this.state?.copied ? '#6c6' : '#c66',
+              backgroundColor: this.state?.copied ? '#6c6' : '#888',
               borderRadius: '50%',
               textAlign: 'center',
               lineHeight: '32px'
