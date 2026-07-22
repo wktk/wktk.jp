@@ -16,7 +16,7 @@
   ],
   "extends": [
     "config:base",
-    "group:react",
+    "group:recommended",
     ":timezone(Asia/Tokyo)"
   ]
 }
